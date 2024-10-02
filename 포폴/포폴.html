@@ -6,22 +6,114 @@
     <title>Document</title>
     <link rel="stylesheet" href="../reset.css">
     <style>
+        img {
+            display: block;
+            width: 100%;
+        }
+        
+        body > section {
+            padding: 0 32px;
+        }
 
+        header {
+            padding: 0 32px;
+        }
+
+        main {
+            padding: 0 32px;
+        }
+
+        footer {
+            padding: 0 32px;
+        }
+
+        .header-container {
+            height: 100px;
+
+            border: 1px solid white;
+            margin: 0 auto;
+
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+           
+        }
+        nav > ul {
+            font-size: 16px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+        }
+       
+        .header-logo {
+            font-size: 24px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .main-container {
+            height: 1080px;
+            margin: 0 auto;
+
+            background-image: url(../img/메인사진.jpg);
+            
+        }
+
+        .main-container {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 310px 0;
+        }
+
+        .main-box {
+            width: 480px;
+            height: 350px;
+            border: 3px solid white;
+            
+        }
+
+        h1 {
+            font-size: 60px;
+        }
+
+        .main-box > p {
+            font-size: 20px;
+        }
+
+        .main-img {
+            width: 570px;
+            height: 660px;
+            
+            /* 사이즈가 안먹힘 */
+        }
+
+        .main-img-wrapper{
+            width: 580px;
+            height: 670px;
+
+            padding: 5px 5px;
+            border: 1px solid white;
+        }
     </style>
 </head>
 <body>  
     <header>
         <section class="header-container">
             <a href="">
-                <p>Furniture Lab</p>
+                <p class="header-logo">Furniture Lab</p>
             </a>
             <nav>
                 <ul>
                     <a href=""><li>ABOUT FURNITURE LAB</li></a>
-                    <a href=""></a><li>SHOP</li></a>
-                    <a href=""></a><li>COMMUNITY</li></a>
-                    <a href=""></a><li>CUSTOMER SERVISE</li></a>
-                    <a href=""></a><li>LOGIN</li></a>
+                    <a href=""><li>SHOP</li></a>
+                    <a href=""><li>COMMUNITY</li></a>
+                    <a href=""><li>CUSTOMER SERVISE</li></a>
+                    <a href=""><li>LOGIN</li></a>
                 </ul>
             </nav>
         </section>
@@ -30,9 +122,8 @@
 
     <Main>
         <section class="main-container">
-            <div>
-                <div>
-                    <!-- <div>네모박스</div> -->
+            <div class="main-container-explain">
+                <div class="main-box">
                     <h1>FURNITURE<br>LAB</h1>
                     <p>'공간에 대한 끊임 없는 실험</p>
                 </div>
@@ -42,9 +133,9 @@
                         of Koreans</p>  
                     </div>
             </div>
-            <div>
-                <figure>
-                    <!-- <img src="" alt=""> 가구이미지 -->
+            <div class="main-img-wrapper">
+                <figure class="main-img">
+                    <img src="../img/메인사진.jpg" alt="">
                 </figure>
             </div>
         </section>
