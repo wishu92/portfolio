@@ -59,9 +59,9 @@
         .main-container {
             height: 1080px;
             margin: 0 auto;
-
-            background-image: url(../img/메인사진.jpg);
-            
+            background-image: url(../img/image.png);
+            background-size: cover;
+            background-repeat: no-repeat;
         }
 
         .main-container {
@@ -74,21 +74,22 @@
             width: 480px;
             height: 350px;
             border: 3px solid white;
-            
         }
 
         h1 {
             font-size: 60px;
+            color: white;
         }
 
         .main-box > p {
             font-size: 20px;
+            color: white;
         }
 
         .main-img {
             width: 570px;
             height: 660px;
-            
+            object-fit: contain;
             /* 사이즈가 안먹힘 */
         }
 
@@ -98,6 +99,11 @@
 
             padding: 5px 5px;
             border: 1px solid white;
+        }
+
+        .main-sub-explain {
+            color: white;
+            font-size: 20px;
         }
     </style>
 </head>
@@ -125,9 +131,9 @@
             <div class="main-container-explain">
                 <div class="main-box">
                     <h1>FURNITURE<br>LAB</h1>
-                    <p>'공간에 대한 끊임 없는 실험</p>
+                    <p>'공간에 대한 끊임 없는 실험'</p>
                 </div>
-                <div>
+                <div class="main-sub-explain">
                     <p>Seeking the beauty within spaces<br>
                         that suit the living environment<br>
                         of Koreans</p>  
