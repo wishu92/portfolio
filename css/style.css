@@ -3,7 +3,7 @@ img {
     width: 100%;
 }
 
-body>section {
+body > section {
     padding: 0 32px;
 }
 
@@ -13,11 +13,14 @@ header {
     display: flex;
     justify-content: center;
 
-    /* border-bottom: 0.5px solid white; */
 }
 
-main {
-    padding: 0 32px;
+.main {
+    /* padding: 100px 32px; */
+
+    background-image: url(../img/image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 footer {
@@ -35,7 +38,7 @@ footer {
 
     position: absolute;
 
-     border-bottom: 0.1px solid rgb(255,255,255,0.5);
+    border-bottom: 0.1px solid rgb(255,255,255,0.5);
 }
 
 .web-header a {
@@ -61,32 +64,26 @@ a {
 }
 
 .main-container {
-    height: 1080px;
-    padding: 100px 32px;
+    height: 100vh;
+    /* padding: 100px 32px; */
     margin: 0 auto;
 
-    background-image: url(../img/image.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .main-container-explain {
     display: flex;
     flex-direction: column;
-    gap: 140px;
-}
 
-.main-container {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 310px 0;
+    gap: 150px;
+    flex-wrap: 1;
 }
 
 .main-box {
-    width: 480px;
-    height: 350px;
-    border-top: 3px solid white;
+    
+    border-top: 4px solid white;
     border-left: 1px solid white;
 
     display: flex;
@@ -95,6 +92,7 @@ a {
 
     padding: 65px;
     box-sizing: border-box;
+    
 }
 
 h1 {
@@ -108,41 +106,43 @@ h1 {
 }
 
 .main-sub-explain {
-    width: 480px;
+    color: white;
+    font-size: 20px;
+
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .main-sub-explain > p {
-    text-align: left;
+    text-align: right;
 }
 .main-img {
-    width: 570px;
-    height: 660px;
+    width: 600px;
     object-fit: contain;
     /* 사이즈가 안먹힘 */
+    
 }
 
 .main-img-wrapper {
-    width: 580px;
-    height: 670px;
-
-    padding: 5px 5px;
     border: 1px solid white;
+/* 
+    flex-wrap: 1; main-container-explain 이랑같이  */
 }
 
-.main-sub-explain {
-    color: white;
-    font-size: 20px;
+.about {
+    background-color: #f2f4ef;
 }
 
 .brand-explain {
     width: 1200px;
-    height: 760px;
+    height: 100vh;
+
+    margin: 0 auto;
 
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-
-    background-color: #fcfef9;
+    justify-content: space-evenly;
+    
 
 }
 
@@ -151,6 +151,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 h2 {
@@ -166,6 +167,15 @@ h2 {
     justify-content: center;
     align-items: center;
 
+
+}
+
+.brand-detail-explain {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
 }
 
 h3 {
@@ -173,47 +183,32 @@ h3 {
 }
 
 .brand-explain figure {
-    width: 380px;
-    height: 540px;
-    object-fit: cover;
-
+    width: 100px;
     transform: rotate(270deg);
 }
 
-
-
-
-
-
-
-
-
-#best-item {
-    height: 880px;
+.brand-summary {
+    font-size: 16px;
 }
 
-.best-seller {
+.brand-detail-explain > p:last-child {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.best-item-container {
     width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.best-seller-pack {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    gap: 36px;
-}
 
 .best-seller-furniture {
-    width: 270px;
-    height: 350px;
+   
     box-shadow: 5px 5px 3px #999
 }
 
-.best-seller-furniture figure {
-    width: 120px;
-    height: 215px;
-}
