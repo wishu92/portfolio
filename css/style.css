@@ -1,0 +1,219 @@
+img {
+    display: block;
+    width: 100%;
+}
+
+body>section {
+    padding: 0 32px;
+}
+
+header {
+    padding: 0 32px;
+
+    display: flex;
+    justify-content: center;
+
+    /* border-bottom: 0.5px solid white; */
+}
+
+main {
+    padding: 0 32px;
+}
+
+footer {
+    padding: 0 32px;
+}
+
+.web-header {
+    height: 100px;
+    width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+
+     border-bottom: 0.1px solid rgb(255,255,255,0.5);
+}
+
+.web-header a {
+    color: white;
+}
+
+nav > ul {
+    font-size: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.header-logo {
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-container {
+    height: 1080px;
+    padding: 100px 32px;
+    margin: 0 auto;
+
+    background-image: url(../img/image.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.main-container-explain {
+    display: flex;
+    flex-direction: column;
+    gap: 140px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 310px 0;
+}
+
+.main-box {
+    width: 480px;
+    height: 350px;
+    border-top: 3px solid white;
+    border-left: 1px solid white;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding: 65px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 60px;
+    color: white;
+}
+
+.main-box > p {
+    font-size: 20px;
+    color: white;
+}
+
+.main-sub-explain {
+    width: 480px;
+}
+
+.main-sub-explain > p {
+    text-align: left;
+}
+.main-img {
+    width: 570px;
+    height: 660px;
+    object-fit: contain;
+    /* 사이즈가 안먹힘 */
+}
+
+.main-img-wrapper {
+    width: 580px;
+    height: 670px;
+
+    padding: 5px 5px;
+    border: 1px solid white;
+}
+
+.main-sub-explain {
+    color: white;
+    font-size: 20px;
+}
+
+.brand-explain {
+    width: 1200px;
+    height: 760px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    background-color: #fcfef9;
+
+}
+
+.brand-explain-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+.sub-title {
+    font-size: 16px;
+}
+
+.brand-explain-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h3 {
+    font-size: 36px;
+}
+
+.brand-explain figure {
+    width: 380px;
+    height: 540px;
+    object-fit: cover;
+
+    transform: rotate(270deg);
+}
+
+
+
+
+
+
+
+
+
+#best-item {
+    height: 880px;
+}
+
+.best-seller {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.best-seller-pack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 36px;
+}
+
+.best-seller-furniture {
+    width: 270px;
+    height: 350px;
+    box-shadow: 5px 5px 3px #999
+}
+
+.best-seller-furniture figure {
+    width: 120px;
+    height: 215px;
+}

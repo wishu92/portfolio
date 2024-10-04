@@ -1,200 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../reset.css">
-    <style>
-        img {
-            display: block;
-            width: 100%;
-        }
-        
-        body > section {
-            padding: 0 32px;
-        }
-
-        header {
-            padding: 0 32px;
-        }
-
-        main {
-            padding: 0 32px;
-        }
-
-        footer {
-            padding: 0 32px;
-        }
-
-        .header-container {
-            height: 100px;
-
-            border: 1px solid white;
-            margin: 0 auto;
-
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-
-           
-        }
-        nav > ul {
-            font-size: 16px;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 25px;
-        }
-       
-        .header-logo {
-            font-size: 24px;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        .main-container {
-            height: 1080px;
-            margin: 0 auto;
-            background-image: url(../img/image.png);
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-
-        .main-container {
-            display: flex;
-            justify-content: space-evenly;
-            padding: 310px 0;
-        }
-
-        .main-box {
-            width: 480px;
-            height: 350px;
-            border: 3px solid white;
-        }
-
-        h1 {
-            font-size: 60px;
-            color: white;
-        }
-
-        .main-box > p {
-            font-size: 20px;
-            color: white;
-        }
-
-        .main-img {
-            width: 570px;
-            height: 660px;
-            object-fit: contain;
-            /* 사이즈가 안먹힘 */
-        }
-
-        .main-img-wrapper{
-            width: 580px;
-            height: 670px;
-
-            padding: 5px 5px;
-            border: 1px solid white;
-        }
-
-        .main-sub-explain {
-            color: white;
-            font-size: 20px;
-        }
-
-        .brand-explain {
-            width: 1200px;
-            height: 760px;
-
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-
-            background-color: #fcfef9;
-
-        }
-
-        .brand-explain-title {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        h2 {
-            font-size: 40px;
-        }
-
-        .sub-title {
-            font-size: 16px;
-        }
-
-        .brand-explain-content{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
-        }
-
-        h3 {
-            font-size: 36px;
-        }
-
-        .brand-explain figure {
-            width: 380px;
-            height: 540px;
-            object-fit: cover;
-
-            transform: rotate(270deg);
-        }
-
-
-    </style>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>  
+
+<body>
     <header>
-        <section class="header-container">
-            <a href="">
-                <p class="header-logo">Furniture Lab</p>
+        <div class="web-header">
+            <a href="#">
+                <p class="header-logo">FURNITURE LAB.</p>
             </a>
             <nav>
                 <ul>
-                    <a href=""><li>ABOUT FURNITURE LAB</li></a>
-                    <a href=""><li>SHOP</li></a>
-                    <a href=""><li>COMMUNITY</li></a>
-                    <a href=""><li>CUSTOMER SERVISE</li></a>
-                    <a href=""><li>LOGIN</li></a>
+                    <li>
+                        <a href="#">
+                            ABOUT US
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            OUR BEST SELLER
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            SHOW ROOM
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            WITH FURNITURE LAB
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            LOGIN
+                        </a>
+                    </li>
                 </ul>
             </nav>
-        </section>
+        </div>
+        <!-- <div class="mobile-header">
+            <a href="#">
+                <p class="header-logo">FURNITURE LAB</p>
+            </a>
+            <figure>
+                <img src="../img/hamburger.png" alt="hamburger">
+            </figure>
+        </div> -->
     </header>
 
 
-    <Main>
-        <section class="main-container">
+    <section>
+        <div class="main-container">
             <div class="main-container-explain">
                 <div class="main-box">
                     <h1>FURNITURE<br>LAB</h1>
-                    <p>'공간에 대한 끊임 없는 실험'</p>
+                    <p> &lsquo; 공간에 대한 끊임 없는 실험&rsquo;</p>
                 </div>
                 <div class="main-sub-explain">
                     <p>Seeking the beauty within spaces<br>
                         that suit the living environment<br>
-                        of Koreans</p>  
-                    </div>
+                        of Koreans</p>
+                </div>
             </div>
             <div class="main-img-wrapper">
                 <figure class="main-img">
-                    <img src="../img/메인사진.jpg" alt="">
+                    <img src="../img/메인사진.jpg" alt="메인이미지_가구인테리어">
                 </figure>
             </div>
-        </section>
-    </Main>
-    <section id="explain">
+        </div>
+    </section>
+
+    <section id="about">
         <div class="brand-explain">
             <div class="brand-explain-title">
                 <h2>ABOUT US</h2>
@@ -203,113 +86,83 @@
             <div class="brand-explain-content">
                 <div class="brand-detail-explain">
                     <h3>
-                        WHAT<br> 
-                        FURNITURE LAB<br> 
+                        WHAT<br>
+                        FURNITURE LAB<br>
                         PURSUE.
                     </h3>
                     <p>
                         퍼니처랩은 숨쉬는 자연의 재료, 최대한의 원목을 사용합니다<br>
                         한국인의 주거공간에 맞는 공간 안의 아름다움을 추구합니다<br>
-                        남의 눈을 의식하지 않고 합리적인 가격 책정으로 이윤을 나눕니다<br> 
+                        남의 눈을 의식하지 않고 합리적인 가격 책정으로 이윤을 나눕니다<br>
                         하지만 거품의 제거가 품질의 제거를 의미하진 않습니다
                     </p>
-                    <P class="braind-summary">
+                    <P class="brand-summary">
                         퍼니처랩은 주거환경에 자연을 더해 편안함을 만듭니다
                     </P>
                 </div>
                 <figure>
-                    <img src="../img/aboutus.jpg" alt="">
+                    <img src="../img/aboutus.jpg" alt="자연이미지">
                 </figure>
             </div>
         </div>
     </section>
-
-    <style>
-        #best-item {
-            height: 880px;
-        }
-
-        .best-seller {
-            width: 1200px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .best-seller-pack {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            gap: 36px;
-        }
-
-        .best-seller-furniture {
-            width: 270px;
-            height: 350px;
-            box-shadow: 5px 5px 3px #999
-        }
-
-        .best-seller-furniture figure{
-            width: 120px;
-            height: 215px;
-        }
-
-    </style>
-
     <section id="best-item">
-        <div class="best-seller">
-            <div class="best-seller-title"></div>
+        <div class="best-item-container">
+            <div class="best-seller">
+                <div class="best-seller-title"></div>
                 <h2>OUR BEST SELLER</h2>
                 <P>FURNITURE LAB</P>
             </div>
             <div class="best-seller-pack">
                 <figure>
-                    <img src="../img/화살표.png" alt="">
+                    <img src="../img/화살표.png" alt="carousel_right화살표">
                 </figure>
-                <div>
-                    <div class="best-seller-furniture">
+                <ul>
+                    <li>
+                        <div class="best-seller-furniture">
+                            <figure>
+                                <img src="../img/가구1번.png" alt="net_high_shelf">
+                            </figure>
+                        </div>
+                        <h5>NET HIGH SHELF</h5>
+                        <p>$370,000</p>
+                    </li>
+                    <li>
+                        <div class="best-seller-furniture">
                         <figure>
-                            <img src="../img/가구1번.png" alt="">
+                            <img src="../img/가구2번.png" alt="toast_wide_drawer">
                         </figure>
-                    </div>
-                    <h5>NET HIGH SHELF</h5>
-                    <p>$370,000</p>
-                </div>
-                <div>
-                    <div class="best-seller-furniture">
-                        <figure>
-                            <!-- <img src="" alt="">  베스트셀러이미지-->
-                        </figure>
-                    </div>
-                    <h5>TOAST WIDE DRAWER</h5>
-                    <p>$450,000</p>
-                </div>
-                <div>
-                    <div class="best-seller-furniture">
-                        <figure>
-                            <!-- <img src="" alt="">  베스트셀러이미지-->
-                        </figure>
-                    </div>
-                    <h5>SIMPLE DOUBLE WOOD SHELF</h5>
-                    <p>$280,000</p>
-                </div>
-                <div>
-                    <div class="best-seller-furniture">
-                        <figure>
-                            <!-- <img src="" alt="">  베스트셀러이미지-->
-                        </figure>
-                    </div>
-                    <h5>BRUNCH WOOD CHAIR</h5>
-                    <p>$190,000</p>
-                </div>
-                <!-- <figure>
-                    <img src="" alt="">
-                </figure>  화살표-->
+                        </div>
+                        <h5>TOAST WIDE DRAWER</h5>
+                        <p>$450,000</p>
+                    </li>
+                    <li>
+                        <div class="best-seller-furniture">
+                            <figure>
+                                <img src="../img/가구3번.png" alt="double_wood_shelf">
+                            </figure>
+                        </div>
+                        <h5>SIMPLE DOUBLE WOOD SHELF</h5>
+                        <p>$280,000</p>
+                    </li>
+                    <li>
+                        <div class="best-seller-furniture">
+                            <figure>
+                                <img src="../img/의자4번.png" alt="brunch_wood_chair">
+                            </figure>
+                        </div>
+                        <h5>BRUNCH WOOD CHAIR</h5>
+                        <p>$190,000</p>
+                    </li>
+                </ul>
+                <figure>
+                    <img src="../img/화살표.png" alt="carousel_left화살표">
+                </figure>
+            </div>
+            <div class="mobile-radio-button">
             </div>
         </div>
     </section>
-
 
     <section id="showroom">
         <div class="showroom-introduce">
@@ -317,136 +170,162 @@
                 <h2>SHOW ROOM</h2>
                 <P>FURNITURE LAB</P>
             </div>
-                <div class="showroom-bamgasi">
-                    <figure>
-                        <!-- <img src="" alt=""> 밤가시점사진-->
-                    </figure>
+            <div class="showroom-bamgasi">
+                <figure>
+                    <img src="../img/밤가시.png" alt="밤가시점쇼룸">
+                </figure>
+                <div>
                     <div class="showroom-bamgasi-address">
-                        <!-- <div>네모박스 </div> -->
+                        <h3>BAMGASI SHOW ROOM</h3>
+                        <P>경기도 고양시 일산동구 일산로 380번길 25&#45;2</P>
                     </div>
-                    <h3>BAMGASI SHOW ROOM</h3>
-                    <P>경기도 고양시 일산동구 일산로 380번길 25-2</P>
-                    <a href="">
-                        <div class="more-view">
-                            <p>밤가시쇼륨 더보기 (화살표추가)</p>
-                        </div>
-                    </a>
+                    <div class="more-view">
+                        <button>
+                            <a href="#">
+                                밤가시쇼륨 더보기&rarr;
+                                <img src="../img/더보기화살표.png" alt="더보기화살표">
+                            </a>
+                        </button>
+                    </div>
                 </div>
-                <div class="showroom-garage">
+            </div>
+            <div class="showroom-garage">
+                <div>
                     <div class="showroom-garage-address">
-                        <!-- <div>네모박스 </div> -->
+                        <h3>GARAGE SHOW ROOM</h3>
+                        <P>경기도 고양시 일산동구 성석로 126번길 24</P>
                     </div>
-                    <h3>GARAGE SHOW ROOM</h3>
-                    <P>경기도 고양시 일산동구 성석로 126번길 24</P>
-                    <a href="">
-                        <div class="more-view">
-                            <p>가라지쇼륨 더보기 (화살표추가)</p>
-                        </div>
-                    </a>
-                    <figure>
-                        <!-- <img src="" alt=""> 가라지점사진-->
-                    </figure>
+                    <div class="more-view">
+                        <button>
+                            <a href="#">
+                                가라지쇼륨 더보기
+                                <img src="../img/더보기화살표.png" alt="더보기화살표">
+                            </a>
+                        </button>
+                    </div>
                 </div>
+                <figure>
+                    <img src="../img/가라지.png" alt="가라지점쇼룸">
+                </figure>
+            </div>
         </div>
     </section>
-    <section id="convenience">
-        <div class="convenience-container">
-            <figure>
-                <!-- <img src="" alt=""> 꽃사진-->
-            </figure>
-            <div>
+    <section id="with-furniture">
+        <div class="with-furniture-container">
+            <div class="with-furniture-title">
                 <h3>WITH FURNITURE LAB</h3>
                 <P>FURNITURE LAB</P>
             </div>
-            <div class="">
-                <div class="review">
-                    <!-- <img src="" alt=""> -->
-                    <p>REVIEW</p>
-                    <P>
-                    고객님의<br>
-                    후기를 공유해보세요
-                    </P>
-                </div>
-                <div class="review">
-                    <!-- <img src="" alt=""> -->
-                    <p>REVIEW</p>
-                    <P>
-                    고객님의<br>
-                    후기를 공유해보세요
-                    </P>
-                </div>
-                <div class="event">
-                    <!-- <img src="" alt=""> -->
-                    <p>EVENT</p>
-                    <P>
-                    진행중인<br>
-                    이벤트를 확인해보세요
-                    </P>
-                </div>
-                <div class="customer-center">
-                    <!-- <img src="" alt=""> -->
-                    <p>CUSTOMER CENTER</p>
-                    <P>
-                    고객님의 불편사항을<br>
-                    1:1로 문의해보세요
-                    </P>
-                </div>
-                <div class="qna">
-                    <!-- <img src="" alt=""> -->
-                    <p>Q&A</p>
-                    <P>
-                    자주하는 질문을<br>
-                    확인해보세요
-                    </P>
-                </div>
+            <div class="with-furniture-content">
+                <ul>
+                    <li>
+                        <div class="review">
+                            <a href="#">
+                                <img src="../img/review-icon.png" alt="review-icon">
+                                <p>REVIEW</p>
+                                <P>
+                                    고객님의<br>
+                                    후기를 공유해보세요
+                                </P>
+                            </a>
+                        </div> 
+                    </li>
+                    <li>
+                        <div class="event">
+                            <a href="#">
+                                <img src="../img/event-icon.png" alt="event-icon">
+                                <p>EVENT</p>
+                                <P>
+                                    진행중인<br>
+                                    이벤트를 확인해보세요
+                                </P>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="customer-center">
+                            <a href="#">
+                                <img src="../img/문의-icon.png" alt="customer-center-icon">
+                                <p>CUSTOMER CENTER</p>
+                                <P>
+                                    고객님의 불편사항을<br>
+                                    1&#58;1로 문의해보세요
+                                </P>
+                            </a>
+                        </div>
+                    </li>
+                    <li>     
+                        <div class="qna">
+                            <a href="#">
+                                <img src="../img/qna-icon.png" alt="qna-icon">
+                                <p>Q&A</p>
+                                <P>
+                                    자주하는 질문을<br>
+                                    확인해보세요
+                                </P>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <figure>
-                <!-- <img src="" alt=""> 꽃사진-->
-            </figure>
         </div>
     </section>
+
     <footer>
         <div class="footer-container">
-            <div class="footer-main">
-                <a href="">
+            <figure>
+                <a href="#">
                     <p>FURNITURE LAB</p>
                 </a>
-                <div class="id-container">
-                    <ul>
-                        <li>
-                            <p>(주)테라티디</p>
-                        </li>
-                        <li>
-                            <p>대표자</p> 
-                            <p>홍영욱</p>
-                        </li>
-                        <li>
-                            <p>주소</p>
-                            <p>경기도 고양시 일산동구 일산로 380번 길</p>
-                        </li>
-                        <li>
-                            <p>사업자등록번호</p>
-                            <p>128-86-55020</p>
-                        </li>
-                        <li>
-                            <p>BANK INFO</p>
-                            <p>하나은행 145-910009-89204<br>
-                                예금주 (주)테라티디</p>
-                        </li>
-                    </ul>
+            </figure>
+            <div class="footer-main">
+                <div class="footer-id-container">
+                    <p>
+                        &#40;주&#41;테라티디
+                    </p>
+                    <p>
+                        대표자 홍영욱
+                    </p>
+                    <p>
+                        주소 경기도고양시 일산동구 일산로 380번 길
+                    </p>
+                    <p>
+                        사업자등록번호 128&#45;86&#45;55020
+                    </p>
+                    <p>
+                        BANK INFO 하나은행 145&#45;910009&#45;89204 <br>
+                        예금주 &#40;주&#41;테라티디
+                    </p>
                     <div class="footer-customer-center">
                         <p>고객센터</p>
-                        <p>02-701-4202</p>
+                        <p>02&#45;701&#45;4202</p>
                         <p>
-                            월-금 10AM-6AM <br>
-                            점심시간 12PM-13:30PM <br>
+                            월&#45;금 10AM&#45;6AM <br>
+                            점심시간 12PM&#45;13&#58;30PM <br>
                             주말 및 공휴일 휴무
                         </p>
-                        <!-- <a href=""></a> 인스타그램 아이콘
-                        <a href=""></a> -->
+                        <div>
+                            <figure>
+                                <a href="#">
+                                    <img src="../img/facebook-icon.png" alt="facebook-icon">
+                                </a>
+                            </figure>
+                            <figure>
+                                <a href="#">
+                                    <img src="../img/instagram-icon.png" alt="instagram-icon">
+                                </a>
+                            </figure>
+                            <figure>
+                                <a href="#">
+                                    <img src="../img/message.png" alt="message-icon">
+                                </a>
+                            </figure>
+                        </div>
                         <div class="search">
-                            <div></div>
-                            <!-- <a href=""></a> 서치아이콘-->
+                            <input class="customer-center-search" type="text">
+                            <a href="#">
+                                <img src="../img/search-icon.png" alt="search-icon">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -461,4 +340,5 @@
         </div>
     </footer>
 </body>
+
 </html>
