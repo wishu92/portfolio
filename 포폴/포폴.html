@@ -105,6 +105,54 @@
             color: white;
             font-size: 20px;
         }
+
+        .brand-explain {
+            width: 1200px;
+            height: 760px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            background-color: #fcfef9;
+
+        }
+
+        .brand-explain-title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h2 {
+            font-size: 40px;
+        }
+
+        .sub-title {
+            font-size: 16px;
+        }
+
+        .brand-explain-content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        h3 {
+            font-size: 36px;
+        }
+
+        .brand-explain figure {
+            width: 380px;
+            height: 540px;
+            object-fit: cover;
+
+            transform: rotate(270deg);
+        }
+
+
     </style>
 </head>
 <body>  
@@ -150,16 +198,16 @@
         <div class="brand-explain">
             <div class="brand-explain-title">
                 <h2>ABOUT US</h2>
-                <p>FURNITURE LAB</p>
+                <p class="sub-title">FURNITURE LAB</p>
             </div>
-            <div>
-                <div>
+            <div class="brand-explain-content">
+                <div class="brand-detail-explain">
                     <h3>
                         WHAT<br> 
                         FURNITURE LAB<br> 
                         PURSUE.
                     </h3>
-                    <p class="brand-detail-explain">
+                    <p>
                         퍼니처랩은 숨쉬는 자연의 재료, 최대한의 원목을 사용합니다<br>
                         한국인의 주거공간에 맞는 공간 안의 아름다움을 추구합니다<br>
                         남의 눈을 의식하지 않고 합리적인 가격 책정으로 이윤을 나눕니다<br> 
@@ -170,12 +218,44 @@
                     </P>
                 </div>
                 <figure>
-                    <!-- <img src="" alt=""> 자연이미지-->
+                    <img src="../img/aboutus.jpg" alt="">
                 </figure>
             </div>
         </div>
     </section>
 
+    <style>
+        #best-item {
+            height: 880px;
+        }
+
+        .best-seller {
+            width: 1200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .best-seller-pack {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            gap: 36px;
+        }
+
+        .best-seller-furniture {
+            width: 270px;
+            height: 350px;
+            box-shadow: 5px 5px 3px #999
+        }
+
+        .best-seller-furniture figure{
+            width: 120px;
+            height: 215px;
+        }
+
+    </style>
 
     <section id="best-item">
         <div class="best-seller">
@@ -184,13 +264,13 @@
                 <P>FURNITURE LAB</P>
             </div>
             <div class="best-seller-pack">
-                <!-- <figure>
-                    <img src="" alt="">
-                </figure>  화살표-->
+                <figure>
+                    <img src="../img/화살표.png" alt="">
+                </figure>
                 <div>
                     <div class="best-seller-furniture">
                         <figure>
-                            <!-- <img src="" alt="">  베스트셀러이미지-->
+                            <img src="../img/가구1번.png" alt="">
                         </figure>
                     </div>
                     <h5>NET HIGH SHELF</h5>
