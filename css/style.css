@@ -14,8 +14,6 @@ img {
 body > section {
     padding: 0 32px;
 
-
-      
 }
 
 header {
@@ -128,7 +126,7 @@ h1 {
 }
 
 .main-img {
-    width: 350px;
+    width: 380px;
     
 }
 .main-img > img {
@@ -149,6 +147,7 @@ h1 {
 .brand-explain {
     width: 1200px;
     height: 100vh;
+    padding: 50px 32px;
 
     margin: 0 auto;
 
@@ -173,22 +172,24 @@ h2 {
 
 .sub-title {
     font-size: 16px;
+    color: #609f1c;
 }
 
 .brand-explain-content {
     display: flex;
-    justify-content: center;
     align-items: center;
-
+    justify-content: center;
 
 }
 
 .brand-detail-explain {
+    width: 50%;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 50px;
+  
+    gap: 35px;
 }
 
 h3 {
@@ -196,12 +197,18 @@ h3 {
 }
 
 .brand-explain figure {
-    width: 100px;
-    transform: rotate(270deg);
+    width: 450px;
+    /* rotate-가로세로주의 */
+    /* transform: rotate(270deg); */
+}
+
+.brand-explain figure img {
+    object-fit: contain;
 }
 
 .brand-summary {
     font-size: 16px;
+    line-height: 25px;
 }
 
 .brand-detail-explain > p:last-child {
