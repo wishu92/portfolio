@@ -1,7 +1,11 @@
 body {
-    font-family: "Cinzel", serif;
+    /* font-family: "Cinzel", serif;
     font-optical-sizing: auto;
     font-weight: 400;
+    font-style: normal; */
+
+    font-family: "Gowun Batang", serif;
+    font-weight: 700;
     font-style: normal;
       
 }
@@ -93,7 +97,7 @@ a {
 
 .main-box {
     
-    border-top: 3px solid white;
+    border-top: 5px solid white;
     border-left: 1px solid white;
 
     display: flex;
@@ -106,7 +110,6 @@ a {
 }
 
 h1 {
-    font-size: 60px;
     color: white;
 }
 
@@ -138,8 +141,8 @@ h1 {
 }
 
 .main-img-wrapper {
-    padding: 10px;
-    border: 2px solid white;
+    padding: 5px;
+    border: 3px solid white;
     box-sizing: border-box;
 
 }
@@ -170,11 +173,13 @@ h1 {
     flex-direction: column;
 
     align-items: center;
-    
+    color: #003331;
+ 
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 38px;
+    color: #003331;
 }
 
 .sub-title {
@@ -200,17 +205,20 @@ h2 {
 }
 
 h3 {
-    font-size: 36px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #003331;
 }
 
 .brand-summary {
     font-size: 16px;
     line-height: 25px;
+    color: #222;
 }
 
 .brand-detail-explain > p:last-child {
     font-size: 18px;
-
+    color:#222;
 }
 
 .best-item-container {
@@ -278,10 +286,12 @@ h3 {
 
 h5 {
     font-size: 14px;
+    color: #222;
 }
 
-.best-seller-furniture-name {
+.best-seller-furniture-name p {
     font-size: 12px;
+    color: #222;
 }
 
 #showroom {
@@ -323,11 +333,8 @@ h5 {
     gap: 15px;
 }
 
-h3 {
-    font-size: 26px;
-    font-weight: bold;
-    color: #003331;
-
+.bamgasi {
+    text-align: end;
 }
 
 .showroom-bamgasi-infom {
@@ -338,6 +345,18 @@ h3 {
     gap: 45px;
 
 }
+.showroom-address p {
+    color: #333;
+    font-size: 16px;
+
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
 
 /* .showroom-bamgasi-infom::after{
     right: 0;
@@ -352,15 +371,23 @@ h3 {
 }
 
 .more-view button {
-    width: 150px;
+    width: 160px;
     height: 40px;
 
     background-color:white;
     border-width: 0.5px;
-    font-size: 12px;
+    font-size: 14px;
+    font-family: "Gowun Batang", serif;
+    font-weight: 700;
+    font-style: normal;
 
     border-radius: 3px;
+    border-color: rgb(152, 151, 151);
 }
+ button > a {
+    color: #333;
+ }
+
 
 #with-furniture {
     background-color: #edf1e9;
@@ -416,6 +443,20 @@ h3 {
 
 }
 
-.with-furniture-icons a p {
+.with-furniture-icons p {
     text-align: center;
+    font-size: 18px;
+    color: #555;
+}
+
+.with-furniture-icons p:last-child {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+.footer-container {
+    width: 1200px;
+    margin: 0 auto;
+    
 }
