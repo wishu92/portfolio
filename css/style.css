@@ -158,10 +158,10 @@ h1 {
 
 }
 
-.brand-explain-title {
+.section-title {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+
     align-items: center;
     
 }
@@ -183,7 +183,7 @@ h2 {
 }
 
 .brand-detail-explain {
-    width: 50%;
+    width: 100%;
 
     display: flex;
     flex-direction: column;
@@ -196,24 +196,14 @@ h3 {
     font-size: 36px;
 }
 
-.brand-explain figure {
-    width: 450px;
-    /* rotate-가로세로주의 */
-    /* transform: rotate(270deg); */
-}
-
-.brand-explain figure img {
-    object-fit: contain;
-}
-
 .brand-summary {
     font-size: 16px;
     line-height: 25px;
 }
 
 .brand-detail-explain > p:last-child {
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 18px;
+
 }
 
 .best-item-container {
@@ -224,11 +214,106 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
 }
 
+.best-seller {
+    display: flex;
+    align-items: center;
+
+    gap: 50px;
+
+}
+
+.section-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.best-seller-pack > ul {
+    display: flex;
+    justify-content: space-evenly;
+   
+    gap: 30px;
+}
+
+.best-seller-pack li {
+    flex: 1 1 0;
+    /* 
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    flex-basis 값을 0 으로 설정하여 기본 넓이를 없게하면 동일한 크기 자식요소를 만들 수 있다. */
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.best-seller-furniture-name {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
 
 .best-seller-furniture {
-   
-    box-shadow: 5px 5px 3px #999
+    height: 100%;
+    box-shadow: 3px 3px 5px #d0cfcf;
+
+    display: flex;
+    align-items: center;
+
+}
+.best-seller-furniture figure {
+    /* width: 3; */
 }
 
+h5 {
+    font-size: 14px;
+}
+
+.best-seller-furniture-name {
+    font-size: 12px;
+}
+
+.showroom-introduce {
+    width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.section-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.showroom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.showroom figure {
+    width: 50%;
+}
+
+.showroom-address {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+h3 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #003331;
+
+}
