@@ -39,6 +39,8 @@ header {
 
 footer {
     padding: 0 32px;
+
+    background-color:#072e2c;
 }
 
 .web-header {
@@ -208,7 +210,7 @@ h2 {
 h3 {
     font-size: 30px;
     font-weight: bold;
-    color: #003331;
+    color: #222;
 }
 
 .brand-summary {
@@ -347,7 +349,7 @@ h5 {
 
 }
 .showroom-address p {
-    color: #333;
+    color: #222;
     font-size: 16px;
 
 }
@@ -355,7 +357,7 @@ h5 {
 h4 {
     font-size: 24px;
     font-weight: bold;
-    color: #333;
+    color: #222;
 }
 
 
@@ -455,9 +457,117 @@ h4 {
     line-height: 20px;
 }
 
+#footer {
+    padding: 50px 32px;
+}
 
 .footer-container {
     width: 1200px;
     margin: 0 auto;
     
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
 }
+
+.footer-main {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+}
+
+.footer-logo {
+    font-size: 22px;
+    text-decoration: underline;
+    color: white;
+    
+}
+
+.footer-id-container {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+}
+
+.footer-id-container div {
+    display: flex;
+
+}
+
+.footer-id-inform {
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+}
+
+.footer-id-container div p:last-child {
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+
+}
+
+.footer-customer-center {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+}
+.footer-customer-center p {
+    color: white;
+    font-weight: 400;
+}
+
+.footer-customer-center p:first-child {
+    font-size: 16px;
+    font-weight: 700;
+
+}
+
+.footer-customer-center p:nth-child(2n){
+    font-size: 22px;
+}
+
+.footer-customer-center p:last-child {
+    font-size: 10px;
+}
+
+.footer-icons-collect {
+    display: flex;
+}
+
+.footer-icons {
+   width: 28px;
+}
+
+.search {
+    display: flex;
+}
+
+.customer-center-search {
+    height: 25px;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+.footer-button {
+    display: flex;
+
+    color: white;
+    font-weight: 400;
+    font-size: 12px;
+    gap: 30px;
+}
+
+/* our best seller
+가구 사이즈
+링크넣기
+
+showroom 나뭇잎넣기 네모넣기 사진사이즈정리*/
