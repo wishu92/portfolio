@@ -23,10 +23,6 @@
     flex-shrink: 0;
 }
 
-.contents {
-    width: 300px;
-}
-
 .sbs-controls {
     position: absolute;
     width: 100%;
@@ -66,4 +62,9 @@
     position: absolute;
     right: 4px;
     bottom: 4px;
+}
+
+.my-slider {
+    width: 30%;
+    height: 100%;
 }
