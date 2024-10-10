@@ -243,7 +243,7 @@ h3 {
     align-items: center;
 }
 
-.best-seller-pack > ul {
+.best-seller-pack {
     display: flex;
     justify-content: space-between;
    
@@ -309,8 +309,8 @@ h5 {
     width: 500px;
     height: 500px;
     position: absolute;
-    top: -20px;
-    left: 180px;
+    top: 0%;
+    left: -5%;
     z-index: -1;
     background-image: url(../img/showroom\ 나뭇잎.png);
     background-size: contain;
@@ -369,7 +369,7 @@ h5 {
     text-align: end;
 }
 
-.showroom-bamgasi-infom {
+.showroom-bamgasi-inform {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -379,7 +379,7 @@ h5 {
     position: relative;
 }
 
-.showroom-bamgasi-infom::before {
+.showroom-bamgasi-inform::before {
     content: '';
     width: 80px;
     height: 3px;
@@ -387,9 +387,10 @@ h5 {
     display: block;
     position: absolute;
     top: 0;
+    left: 90%;
 }
 
-.showroom-bamgasi-infom::after {
+.showroom-bamgasi-inform::after {
     content: '';
     width: 300px;
     height: 1px;
@@ -397,8 +398,9 @@ h5 {
     display: block;
     position: absolute;
     left: 50%;
-    /* top: calc(50% + 300/2); */
     transform: rotate(270deg);
+    top: 34%;
+    margin-left: 50px;
 }
 
 .showroom-address p {
@@ -413,17 +415,38 @@ h4 {
     color: #222;
 }
 
-
-/* .showroom-bamgasi-infom::after{
-    right: 0;
-    background-image: url(../img/쇼룸밤가시네모.png);
-} */
-
 .showroom-garage-inform {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    height: 450px;
 
     gap: 45px;
+    position: relative;
+}
+
+.showroom-garage-inform::before {
+    content: '';
+    width: 81px;
+    height: 3px;
+    background: #000;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 92%;
+}
+
+.showroom-garage-inform::after {
+    content: '';
+    width: 300px;
+    height: 1px;
+    background: #000;
+    display: block;
+    position: absolute;
+    right: 50%;
+    transform: rotate(270deg);
+    top: 34%;
+    margin-right: 50px;
 }
 
 .more-view button {
@@ -615,15 +638,12 @@ button > a {
 
 .footer-button {
     display: flex;
-
-    color: white;
-    font-weight: 400;
-    font-size: 12px;
     gap: 30px;
 }
 
-/* our best seller
-가구 사이즈
-링크넣기
+.footer-button a {
+    color: white;
+    font-weight: 400;
+    font-size: 12px;
+}
 
-showroom 나뭇잎넣기 네모넣기 사진사이즈정리*/
