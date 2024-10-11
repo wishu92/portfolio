@@ -54,6 +54,10 @@ footer {
     color: white;
 }
 
+.web-header a:hover {
+    color: gray;
+}
+
 nav > ul {
 
     font-size: 16px;
@@ -292,6 +296,7 @@ h3 {
 h5 {
     font-size: 16px;
     color: #222;
+    text-align: center;
 }
 
 .best-seller-furniture-name p {
@@ -406,7 +411,6 @@ h5 {
 .showroom-address p {
     color: #222;
     font-size: 16px;
-
 }
 
 h4 {
@@ -457,7 +461,15 @@ h4 {
     font-weight: 700;
     font-style: normal;
     border-radius: 3px;
-    border-color: rgb(152, 151, 151);
+    border-color: rgba(245, 241, 241, 0.493);
+}
+
+.more-view button:hover {
+    background-image: linear-gradient(0deg, rgb(246, 245, 245),white);
+    /* background-image: linear-gradient(to right, red, yellow); */
+
+    transition: 0.3s;
+
 }
 
 button > a {
@@ -581,14 +593,15 @@ button > a {
 
 .footer-id-inform {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     color: white;
 }
 
 .footer-id-container div p:last-child {
-    font-size: 16px;
+    font-size: 12px;
     color: white;
     font-weight: 400;
+    line-height: 16px;
 
 }
 
@@ -602,48 +615,51 @@ button > a {
 .footer-customer-center p {
     color: white;
     font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
 }
 
 .footer-customer-center p:first-child {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
 
 }
 
 .footer-customer-center p:nth-child(2n){
-    font-size: 22px;
+    font-size: 16px;
 }
 
-.footer-customer-center p:last-child {
-    font-size: 10px;
-}
-
-.footer-icons-collect {
-    display: flex;
-}
-
-.footer-icons {
-   width: 28px;
-}
+/* .footer-customer-center p:last-child {
+    font-size: 12px;
+    line-height: 18px;
+} */
 
 .search {
     display: flex;
+    gap: 10px;
 }
 
 .customer-center-search {
-    height: 25px;
     border: 1px solid white;
     border-radius: 50px;
+    height: 20px;
+    width: 120px;
 }
 
-.footer-button {
+.footer-icons {
+    width: 24px;
+}
+
+.footer-bottom {
     display: flex;
     gap: 30px;
+    margin-top: 25px;
 }
 
-.footer-button a {
+.footer-bottom a {
     color: white;
     font-weight: 400;
+
     font-size: 12px;
 }
 
