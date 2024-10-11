@@ -538,6 +538,11 @@ button > a {
     
 }
 
+.with-furniture-icons a:hover {
+    background-color: rgb(230, 224, 224);
+    transition: 0.5s;
+}
+
 .with-furniture-icons h5 {
     color: #555;
 }
