@@ -682,7 +682,11 @@ button > a {
 
 @media screen and (max-width:1365px) {
     .web-header {
-        width: ;
+
+    }
+
+    .web-header li {
+        font-size: 14px;
     }
 }
 
@@ -698,6 +702,11 @@ button > a {
 
     .web-header {
         display: none;
+    }
+
+    .web-header ul {
+        display: flex;
+        flex-direction: column;
     }
 
     .mobile-header {
