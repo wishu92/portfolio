@@ -1,3 +1,7 @@
+:root {
+    --text-color:#f0f4f5;
+    --accent-color:#072e2c;
+}
 body {
     font-family: "Gowun Batang", serif;
     font-weight: 700;
@@ -17,7 +21,6 @@ body > section {
 
 header {
     padding: 0 32px;
-
     display: flex;
     justify-content: center;
 
@@ -38,7 +41,7 @@ footer {
 
 .web-header {
     height: 100px;
-    width: 1200px;
+    width: 100%;
     
     display: flex;
     justify-content: space-between;
@@ -50,7 +53,7 @@ footer {
 }
 
 .web-header a {
-    color: white;
+    color: var(--text-color);
 }
 
 .web-header a:hover {
@@ -101,8 +104,8 @@ a {
 
 .main-box {
 
-    border-top: 5px solid white;
-    border-left: 1px solid white;
+    border-top: 5px solid var(--text-color);
+    border-left: 1px solid var(--text-color);
 
     display: flex;
     flex-direction: column;
@@ -115,7 +118,7 @@ a {
 
 h1 {
     font-size: 56px;
-    color: white;
+    color: var(--text-color);
 }
 
 .main-box > p {
@@ -124,7 +127,7 @@ h1 {
 }
 
 .main-sub-explain {
-    color: white;
+    color: var(--text-color);
     font-size: 20px;
     display: flex;
     flex-direction: row-reverse;
@@ -137,7 +140,7 @@ h1 {
 
 .main-img-wrapper {
     padding: 5px;
-    border: 3px solid white;
+    border: 3px solid var(--text-color);
     box-sizing: border-box;
     width: 380px;
 }
@@ -273,7 +276,7 @@ h3 {
 }
 
 .best-seller button {
-    background-color: white;
+    background-color: var(--text-color);
     border: none;
     cursor: pointer;
 }
@@ -459,7 +462,7 @@ h4 {
 }
 
 .more-view button {
-    background-color:white;
+    background-color:var(--text-color);
     border-width: 0.5px;
     font-size: 14px;
     font-family: "Gowun Batang", serif;
@@ -516,7 +519,7 @@ button > a {
 }
 
 .with-furniture-content li {
-    background-color: white;
+    background-color: var(--text-color);
     width: 250px;
     aspect-ratio: 5/4;
 
@@ -584,7 +587,7 @@ button > a {
 .footer-logo {
     font-size: 22px;
     text-decoration: underline;
-    color: white;
+    color: var(--text-color);
     
 }
 
@@ -604,12 +607,12 @@ button > a {
 .footer-id-inform {
     font-weight: bold;
     font-size: 14px;
-    color: white;
+    color: var(--text-color);
 }
 
 .footer-id-container div p:last-child {
     font-size: 12px;
-    color: white;
+    color: var(--text-color);
     font-weight: 400;
     line-height: 16px;
 
@@ -623,7 +626,7 @@ button > a {
 
 }
 .footer-customer-center p {
-    color: white;
+    color: var(--text-color);
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
@@ -650,7 +653,7 @@ button > a {
 }
 
 .customer-center-search {
-    border: 1px solid white;
+    border: 1px solid var(--text-color);
     border-radius: 50px;
     height: 20px;
     width: 120px;
@@ -667,7 +670,7 @@ button > a {
 }
 
 .footer-bottom a {
-    color: white;
+    color: var(--text-color);
     font-weight: 400;
 
     font-size: 12px;
@@ -679,7 +682,7 @@ button > a {
 
 @media screen and (max-width:1365px) {
     .web-header {
-        flex-direction: column;
+        width: ;
     }
 }
 
@@ -695,7 +698,6 @@ button > a {
 
     .web-header {
         display: none;
-
     }
 
     .mobile-header {
@@ -707,11 +709,19 @@ button > a {
 
         position: absolute;
         border-bottom: 0.1px solid rgb(255,255,255,0.5);
+        
+    }
+
+    .mobile-header a {
+        padding: 0 18px;
+        color: var(--text-color);
     }
 
     .mobile-header figure {
         width: 24px;
+        padding: 0 18px;
     }
+
     .main-container {
         flex-direction: column;
     }
