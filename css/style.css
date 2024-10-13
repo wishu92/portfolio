@@ -39,13 +39,13 @@ footer {
 .web-header {
     height: 100px;
     width: 1200px;
-    margin: 0 auto;
-
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    
     position: absolute;
+
 
     border-bottom: 0.1px solid rgb(255,255,255,0.5);
 }
@@ -59,12 +59,14 @@ footer {
 }
 
 nav > ul {
-
     font-size: 16px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
+    /* gap: 25px; */
+}
+
+nav li {
+    padding: 0px 12px;
+    /* ul에 gap말고 padding으로 */
 }
 
 .header-logo {
@@ -75,6 +77,10 @@ nav > ul {
 a {
     text-decoration: none;
     color: black;
+}
+
+.mobile-header {
+    display: none;
 }
 
 .main-container {
@@ -539,7 +545,7 @@ button > a {
 }
 
 .with-furniture-icons a:hover {
-    background-color: rgb(230, 224, 224);
+    background-color: rgb(238, 231, 231);
     transition: 0.5s;
 }
 
@@ -672,13 +678,32 @@ button > a {
 
 /* 반응형 */
 
-@media screen and (max-width:1365) {
-    
+@media screen and (max-width:1365px) {
+    .web-header {
+        flex-direction: column;
+    }
 }
 
 
-@media screen and (max-width:767) {
+@media screen and (max-width:768px) {
     section {
         padding: 0 20px;
     }
+
+    header {
+        padding: 0 20px;
+    }
+
+    /* nav > ul {
+        display: none;
+    } */
+
+    .mobile-header {
+        display: flex;
+    }
+
+    .main-container {
+        flex-direction: column;
+    }
+
 }
