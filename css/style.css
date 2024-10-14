@@ -21,7 +21,8 @@ body > section {
 header {
     padding: 0 32px;
 
-
+    display: flex;
+    justify-content: center;
 }
 
 .main {
@@ -38,7 +39,7 @@ footer {
 
 .web-header {
     height: 100px;
-    width: 100%;
+    width: 1200px;
     
     display: flex;
     justify-content: space-between;
@@ -466,7 +467,8 @@ h4 {
     font-weight: 700;
     font-style: normal;
     border-radius: 3px;
-    border-color: rgba(245, 241, 241, 0.493);
+    border-color: var(--text-color);
+    background-color: white;
 }
 
 .more-view button:hover {
@@ -483,6 +485,7 @@ button > a {
     height: 40px;
     display: block;
     line-height: 40px;
+
  }
 
 
@@ -683,5 +686,15 @@ button > a {
 
 
 @media screen and (max-width:768px) {
+    section{
+        padding: 0 20px;
+    }
+
+    header {
+        padding: 0 20px;
+        width: 100%;
+        position: absolute;
+    }
+
 
 }
