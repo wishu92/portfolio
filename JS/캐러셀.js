@@ -1,24 +1,24 @@
 function createSlider(target, viewCount, gap, transitionTime, autoPlay){
     // 매개변수 target에 class명을 지정..?
-    target.classList.add('sbs-slider-container');
+    target.classList.add('slider-container');
     // const viewCount = 2;
     // const gap = 8;
     // const transitionTime = 300;
 
     const contentsWrapper = document.createElement('div');
-    contentsWrapper.classList.add('sbs-content-wrapper');
+    contentsWrapper.classList.add('content-wrapper');
     
     
     // div.slider
     const slider = document.createElement('div');
-    slider.classList.add('sbs-slider');
+    slider.classList.add('slider');
 
     // div.contents-wrapper
     
 
     // 1안. 실시간으로 1개씩 옮기다가 갯수가 0개가 되면 멈춘다.
     while(target.childElementCount !== 0) {
-        target.firstElementChild.classList.add('sbs-content')
+        target.firstElementChild.classList.add('content')
         contentsWrapper.appendChild(target.firstElementChild)
     }
 
@@ -43,18 +43,18 @@ function createSlider(target, viewCount, gap, transitionTime, autoPlay){
         // div.slider-container > div.sllider > div.contents-wrapper
 
     const controls = document.createElement('div');
-    controls.classList.add('sbs-controls');
+    controls.classList.add('controls');
 
     const prevButton = document.createElement('button');        
     const nextButton = document.createElement('button');    
     
-    prevButton.classList.add('sbs-prev');
-    nextButton.classList.add('sbs-next');
+    prevButton.classList.add('prev');
+    nextButton.classList.add('next');
 
     prevButton.innerText = '이전';
     nextButton.innerText = '다음';
     const buttons = document.createElement('div');
-    buttons.classList.add('sbs-buttons');
+    buttons.classList.add('buttons');
 
     controls.appendChild(prevButton)
     controls.appendChild(nextButton)
@@ -76,7 +76,7 @@ function createSlider(target, viewCount, gap, transitionTime, autoPlay){
 
     for(let i = 0 ; i < slideCount ; i ++ ){
         const button = document.createElement('div');
-        button.classList.add('sbs-radio-button');
+        button.classList.add('radio-button');
         button.addEventListener('click',()=>{
             index = viewCount + i;
             applyIndexToSlider(true)
@@ -85,7 +85,7 @@ function createSlider(target, viewCount, gap, transitionTime, autoPlay){
         buttons.appendChild(button);
     }
 
-    buttons.children[0].classList.add('sbs-active');
+    buttons.children[0].classList.add('active');
 
     const cloneFirst = [];
     const cloneLast = [];
@@ -212,11 +212,11 @@ function createSlider(target, viewCount, gap, transitionTime, autoPlay){
 
         resetButtons();
         if(viewCount-1 === index){
-            buttons.lastElementChild.classList.add('sbs-active');
+            buttons.lastElementChild.classList.add('active');
         }else if(slideCount + viewCount === index) {
-            buttons.firstElementChild.classList.add('sbs-active');
+            buttons.firstElementChild.classList.add('active');
         }else {
-            buttons.children[index-viewCount].classList.add('sbs-active');
+            buttons.children[index-viewCount].classList.add('active');
         }
 
         // autoPlay를 처음에 ture로 하면 계속 true인 상태임
@@ -237,7 +237,7 @@ function createSlider(target, viewCount, gap, transitionTime, autoPlay){
 
     function resetButtons() {
         for(let i = 0 ; i < buttons.childElementCount ; i ++) {
-            buttons.children[i].classList.remove('sbs-active');
+            buttons.children[i].classList.remove('active');
         }
     }
 }
