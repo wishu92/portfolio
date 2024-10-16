@@ -1,8 +1,88 @@
-@media screen and (max-width:1023px) {
-    
-  }
+@media screen and (max-width:1024px) {
+    .web-header {
+     height: 80px;
+     width: 100%;
+    }
 
-@media screen and (max-width: 767px) {
+    .web-header nav ul {
+        font-size: 14px;
+     }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    .brand-summary p:first-child {
+        font-size: 14px;
+    }
+    
+    .brand-summary p:last-child {
+        font-size: 16px;
+
+    }
+
+    .best-item-container {
+        width: 100%;
+    }
+
+    h5 {
+        font-size: 12px;
+    }
+    
+    .best-seller-furniture-name p {
+        font-size: 12px;
+
+    }
+
+    h2 {
+        font-size: 34px;
+    }
+    
+    .sub-title {
+        font-size: 14px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    .showroom-address p {
+        font-size: 14px;
+    }
+
+    .showroom-bamgasi-inform::after {
+        content: '';
+        width: 300px;
+        height: 1px;
+        background: #000;
+        display: block;
+        position: absolute;
+        left: calc(44% + 1.5px);
+        transform: rotate(270deg);
+        top: 34%;
+        margin-left: 50px;
+    }
+
+    .showroom-garage-inform::after {
+        content: '';
+        width: 300px;
+        height: 1px;
+        background: #000;
+        display: block;
+        position: absolute;
+        right: 44%;
+        transform: rotate(270deg);
+        top: calc(34% + -1px);
+        margin-right: 50px;
+    }
+
+    
+}    
+    
+
+
+
+@media screen and (max-width: 768px) {
     /** Mobile */
     .web-header {
         display: none;
@@ -20,14 +100,10 @@
         width: 120px;
     }
 
-    .mobile-header a{
+    /* .mobile-header a{
         padding: 20px 20px;
-
-    }
-
-    .main-container figure {
-        display: none;
-    }
+        box-sizing: border-box;
+    } */
 
     section {
         padding: 0 20px;
@@ -41,10 +117,28 @@
         padding: 0 20px;
     }
 
+    h1 {
+        font-size: 36px;
+    }
+
+    .main-box > p {
+        font-size: 16px;
+    }
+
+    .main-sub-explain {
+        font-size: 16px;
+    }
+
+    .main-container {
+        gap: 25px;
+    }
+
+    .main-img-wrapper {
+        width: 250px;
+    }
+
+    .brand-explain-content figure {
+        width: 300px;
+    }
 
   }
-  
-
-
-
-

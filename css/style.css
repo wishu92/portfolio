@@ -18,13 +18,6 @@ body > section {
 
 }
 
-header {
-    padding: 0 32px;
-
-    display: flex;
-    justify-content: center;
-}
-
 .main {
     background-image: url(../img/image.png);
     background-size: cover;
@@ -39,8 +32,9 @@ footer {
 
 .web-header {
     height: 100px;
-    width: 1200px;
-    
+    width:100%;
+    padding: 0 32px;
+        
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,11 +42,19 @@ footer {
     position: absolute;
 
     border-bottom: 0.1px solid rgb(255,255,255,0.5);
+    box-sizing: border-box;
+}
+
+.web-header > a {
+    color: var(--text-color);
+    padding: 16px 25px;
+
 }
 
 .web-header a {
     color: var(--text-color);
 }
+
 
 .web-header a:hover {
     color: gray;
@@ -61,12 +63,14 @@ footer {
 nav > ul {
     font-size: 16px;
     display: flex;
-    /* gap: 25px; */
 }
 
 nav li {
-    padding: 0px 12px;
-    /* ul에 gap말고 padding으로 */
+    padding: 16px 15px;
+}
+
+nav li:last-child {
+    padding: 16px 25px;
 }
 
 .header-logo {
@@ -91,6 +95,7 @@ a {
     display: flex;
     justify-content:space-evenly;
     align-items: center;
+    gap: 15px;
 }
 
 .main-container-explain {
@@ -101,7 +106,6 @@ a {
 }
 
 .main-box {
-
     border-top: 5px solid var(--text-color);
     border-left: 1px solid var(--text-color);
 
@@ -140,7 +144,7 @@ h1 {
     padding: 5px;
     border: 3px solid var(--text-color);
     box-sizing: border-box;
-    width: 380px;
+    width: 350px;
 }
 
 .main-img > img {
@@ -156,7 +160,7 @@ h1 {
     padding: 50px 32px; 
 }
 
-.brand-explain {
+.best-item-container {
     max-width: 1200px;
     height: 100vh;
 
@@ -174,7 +178,6 @@ h1 {
 
     align-items: center;
     color: #003331;
- 
 }
 
 h2 {
@@ -187,11 +190,28 @@ h2 {
     color: #609f1c;
 }
 
+.brand-explain {
+    height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .brand-explain-content {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 30px;
 
+}
+
+.brand-explain-content figure{
+    flex-shrink: 0;
+    width: 500px;
 }
 
 .brand-detail-explain {
@@ -212,9 +232,10 @@ h3 {
 .brand-summary {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     height: 100%;
-    padding: 80px 0;
+    padding: 60px 0;
+    gap: 20px;
 
 }
 
@@ -229,8 +250,9 @@ h3 {
     color:#222;
 }
 
+
 .best-item-container {
-    width: 1200px;
+    max-width: 1200px;
     height: 100vh;
     margin: 0 auto;
 
@@ -240,64 +262,11 @@ h3 {
     justify-content: space-evenly;
 }
 
-.best-seller {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-
-}
-
 .section-title {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
-.best-seller-pack {
-    display: flex;
-    justify-content: space-between;
-   
-    gap: 30px;
-}
-
-.best-seller-pack li {
-    flex: 1 1 0;
-    /* 
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 0;
-    flex-basis 값을 0 으로 설정하여 기본 넓이를 없게하면 동일한 크기 자식요소를 만들 수 있다. */
-
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.best-seller button {
-    background-color: var(--text-color);
-    border: none;
-    cursor: pointer;
-}
-/* 비포 에프터로 하면 좋겠다고 하셨음. */
-
-.best-seller-furniture-name {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-}
-
-.best-seller-furniture {
-    height: 100%;
-    display: flex;
-    align-items: center;
-
-}
-
-.best-seller-furniture:hover {
-    box-shadow: 3px 3px 5px #d0cfcf;
-    transition: 0.3s;
-}  
 
 h5 {
     font-size: 16px;
@@ -315,12 +284,13 @@ h5 {
     position: relative;
 }
 
+
 #showroom::before {
     content: '';
     width: 500px;
     height: 500px;
     position: absolute;
-    top: 0%;
+    top: 0;
     left: -5%;
     z-index: -1;
     background-image: url(../img/showroom\ 나뭇잎.png);
@@ -334,7 +304,7 @@ h5 {
     height: 300px;
     position: absolute;
     bottom: -3%;
-    right: 4%;
+    right: 2%;
     z-index: -1;
     background-image: url(../img/showroom\ 나뭇잎.png);
     background-size: contain;
@@ -342,7 +312,7 @@ h5 {
 }
 
 .showroom-introduce {
-    width: 1200px;
+    max-width:1200px;
     margin: 0 auto;
 
     display: flex;
@@ -472,9 +442,7 @@ h4 {
 }
 
 .more-view button:hover {
-    background-image: linear-gradient(0deg, rgb(246, 245, 245),white);
-    /* background-image: linear-gradient(to right, red, yellow); */
-
+    background-color: var(--text-color);
     transition: 0.3s;
 
 }
@@ -499,7 +467,7 @@ button > a {
 }
 
 .with-furniture-container {
-    width: 1200px;
+    max-width: 1200px;
     height: 100vh;
     margin: 0 auto;
 
@@ -515,7 +483,7 @@ button > a {
     align-items: center;
 
     gap: 10px;
-
+    flex-wrap: wrap;
 }
 
 .with-furniture-content li {
@@ -547,7 +515,7 @@ button > a {
 }
 
 .with-furniture-icons a:hover {
-    background-color: rgb(238, 231, 231);
+    background-color: rgb(245, 246, 245);
     transition: 0.5s;
 }
 
@@ -566,7 +534,7 @@ button > a {
 }
 
 .footer-container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     
     display: flex;
