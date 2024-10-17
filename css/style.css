@@ -45,16 +45,15 @@ footer {
     box-sizing: border-box;
 }
 
+.web-header a {
+    color: var(--text-color);
+}
+
 .web-header > a {
     color: var(--text-color);
     padding: 16px 25px;
 
 }
-
-.web-header a {
-    color: var(--text-color);
-}
-
 
 .web-header a:hover {
     color: gray;
@@ -66,16 +65,11 @@ nav > ul {
 }
 
 nav li {
-    padding: 16px 15px;
+    padding: 16px 14px;
 }
 
 nav li:last-child {
     padding: 16px 25px;
-}
-
-.header-logo {
-    font-size: 24px;
-    text-decoration: underline;
 }
 
 a {
@@ -210,8 +204,7 @@ h2 {
 }
 
 .brand-explain-content figure{
-    flex-shrink: 0;
-    width: 500px;
+    width: 100%;
 }
 
 .brand-detail-explain {
@@ -488,9 +481,6 @@ button > a {
 
 .with-furniture-content li {
     background-color: var(--text-color);
-    width: 250px;
-    aspect-ratio: 5/4;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -503,8 +493,8 @@ button > a {
 }
 
 .with-furniture-icons a {
-    width: 250px;
-    height: 200px;
+    width: 225px;
+    aspect-ratio: 5/4;
     
     display: flex;
     flex-direction: column;
@@ -549,14 +539,12 @@ button > a {
 
     display: flex;
     justify-content: space-evenly;
-    /* align-items: center; */
 }
 
 .footer-logo {
-    font-size: 22px;
-    text-decoration: underline;
-    color: var(--text-color);
-    
+    width: 120px;
+    height: 100%;
+    display: block;
 }
 
 .footer-id-container {

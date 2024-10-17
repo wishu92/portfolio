@@ -4,9 +4,38 @@
      width: 100%;
     }
 
+    .web-header > a {
+        width: 120px;
+        padding: 16px 10px;
+    }
+
     .web-header nav ul {
         font-size: 14px;
-     }
+    }
+    
+    nav li {
+        padding: 16px 10px;
+    }
+
+    nav ul a {
+        font-size: 12px;
+    }
+
+    nav li:last-child {
+        padding: 16px 12px;
+    }
+
+    h1 {
+        font-size: 46px;
+    }
+
+    .main-box {
+        padding: 50px;
+    }
+
+    .main-box > p {
+        font-size: 18px;
+    }
 
     h3 {
         font-size: 28px;
@@ -75,15 +104,25 @@
         top: calc(34% + -1px);
         margin-right: 50px;
     }
-
+    
+    .with-furniture-icons img {
+        width: 35px;
+    }
+    
+    .with-furniture-icons a {
+        width: 200px;
+        aspect-ratio: 5/4; 
+    }
+    
+    .with-furniture-icons p:last-child {
+        font-size: 14px;
+    }
     
 }    
     
 
 
-
 @media screen and (max-width: 768px) {
-    /** Mobile */
     .web-header {
         display: none;
     }
@@ -96,14 +135,29 @@
         position: absolute;
     }
 
-    .mobile-header a:first-child {
-        width: 120px;
+    .mobile-header {
+        width: 100%;
+        height: 80px;
+        border-bottom: 0.1px solid rgb(255,255,255,0.5);
     }
 
-    /* .mobile-header a{
+    .mobile-header > a{
+        width: 120px;
         padding: 20px 20px;
-        box-sizing: border-box;
-    } */
+    }
+
+    .mobile-header-icon {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-header-icon > a {
+        display: block;
+        width: 24px;
+        aspect-ratio: 1;
+        padding: 30px 30px;
+        /* 화면 밖으로 나가는이유? */
+    }
 
     section {
         padding: 0 20px;
@@ -115,10 +169,6 @@
 
     footer {
         padding: 0 20px;
-    }
-
-    h1 {
-        font-size: 36px;
     }
 
     .main-box > p {
@@ -141,4 +191,10 @@
         width: 300px;
     }
 
+  }
+
+
+
+  @media screen and (max-width: 480px) {
+    
   }
