@@ -29,8 +29,13 @@
         font-size: 46px;
     }
 
+    .main-container {
+        gap: 30px;
+    }
+
     .main-box {
         padding: 50px;
+        gap: 50px;
     }
 
     .main-box > p {
@@ -47,12 +52,12 @@
     
     .brand-summary p:last-child {
         font-size: 16px;
-
     }
 
-    .best-item-container {
-        width: 100%;
-    }
+    /* .best-item-container,
+    .my-slider {
+        width: 700px;
+    } */
 
     h5 {
         font-size: 12px;
@@ -123,6 +128,10 @@
 
 
 @media screen and (max-width: 768px) {
+    header {
+        position: relative;
+    }
+
     .web-header {
         display: none;
     }
@@ -133,6 +142,8 @@
         align-items: center;
         width: 100%;
         position: absolute;
+        top: 0;
+        left: 0;
     }
 
     .mobile-header {
@@ -141,9 +152,9 @@
         border-bottom: 0.1px solid rgb(255,255,255,0.5);
     }
 
-    .mobile-header > a{
+    .mobile-header > a {
         width: 120px;
-        padding: 20px 20px;
+        padding: 30px;
     }
 
     .mobile-header-icon {
@@ -155,20 +166,32 @@
         display: block;
         width: 24px;
         aspect-ratio: 1;
-        padding: 30px 30px;
+        padding: 30px;
         /* 화면 밖으로 나가는이유? */
     }
 
     section {
-        padding: 0 20px;
+        padding: 0 16px;
     }
 
     header {
-        padding: 0 20px;
+        padding: 0 16px;
     }
 
     footer {
-        padding: 0 20px;
+        padding: 0 16px;
+    }
+
+    .main-container {
+        flex-direction: column;
+    }
+
+    .main-container-explain {
+        gap: 60px;
+    }
+
+    .main-box {
+        gap: 35px;
     }
 
     .main-box > p {
@@ -179,18 +202,47 @@
         font-size: 16px;
     }
 
-    .main-container {
-        gap: 25px;
-    }
-
     .main-img-wrapper {
-        width: 250px;
-    }
-
-    .brand-explain-content figure {
         width: 300px;
     }
 
+    .brand-explain-content {
+        flex-direction: column;
+    }
+
+    .brand-explain-content figure {
+        width: 350px;
+    }
+
+    .explain-showroom {
+        flex-direction: column;
+    }
+
+    .explain-showroom:last-child {
+        flex-direction: column-reverse;
+    }
+
+    .showroom-bamgasi-inform::after,
+    .showroom-bamgasi-inform::before,
+    .showroom-garage-inform::after,
+    .showroom-garage-inform::before {
+        display: none;
+    }
+
+    .showroom-bamgasi-inform {
+        height: 300px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    .showroom-bamgasi-inform {
+
+    }
+
+
+    
   }
 
 
