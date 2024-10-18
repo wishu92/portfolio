@@ -219,11 +219,11 @@ h2 {
 
 .brand-detail-explain::before {
     content: '';
-    height: 360px;
+    height: 350px;
     width: 2px;
     background-color: var(--accent-color);
     position: absolute;
-    top: -5%;
+    top: 0;
     left: -2%;
 }
 
@@ -288,14 +288,13 @@ h5 {
     position: relative;
 }
 
-
 #showroom::before {
     content: '';
     width: 500px;
-    height: 500px;
+    aspect-ratio: 1;
     position: absolute;
     top: 0;
-    left: -5%;
+    left: -3%;
     z-index: -1;
     background-image: url(../img/showroom\ 나뭇잎.png);
     background-size: contain;

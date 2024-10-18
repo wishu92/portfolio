@@ -26,31 +26,34 @@
     }
 
     h1 {
-        font-size: 46px;
+        font-size: 40px;
     }
 
     .main-container {
-        gap: 30px;
+        padding-top: 100px;
     }
 
     .main-box {
         padding: 50px;
-        gap: 50px;
+        gap: 35px;
     }
 
     .main-box > p {
         font-size: 18px;
     }
 
+    .main-img-wrapper{
+        width: 300px;
+    }
+
     .brand-detail-explain::before {
         content: '';
-        height: 280px;
+        height: 260px;
         width: 2px;
         background-color: var(--accent-color);
         position: absolute;
-        top: -4%;
+        top: 0;
         left: -2%;
-    
     }
 
     h3 {
@@ -65,24 +68,12 @@
         font-size: 16px;
     }
 
-    .my-slider {
-        max-width: 600px;
-    }
-
-    .content-wrapper li {
-        min-width: 200px;
-    }
-
-
-
-
     h5 {
         font-size: 12px;
     }
     
     .best-seller-furniture-name p {
         font-size: 12px;
-
     }
 
     h2 {
@@ -99,6 +90,34 @@
 
     .showroom-address p {
         font-size: 14px;
+    }
+
+    #showroom::before {
+        content: '';
+        width: 400px;
+        aspect-ratio: 1;
+        position: absolute;
+        top: 6%;
+        left: -3%;
+        z-index: -1;
+        background-image: url(../img/showroom\ 나뭇잎.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: rotate(80deg);
+    }
+
+    #showroom::after {
+        content: '';
+        width: 200px;
+        aspect-ratio: 1;
+        position: absolute;
+        bottom: -2%;
+        right: -4%;
+        z-index: -1;
+        background-image: url(../img/showroom\ 나뭇잎.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: rotate(200deg);
     }
 
     .showroom-bamgasi-inform::after {
@@ -144,6 +163,17 @@
 
 }    
     
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 768px) {
@@ -207,6 +237,7 @@
 
     .main-container {
         flex-direction: column;
+        padding-top: 0;
     }
 
     .main-container-explain {
@@ -214,7 +245,7 @@
     }
 
     .main-box {
-        gap: 35px;
+        gap: 25px;
     }
 
     .main-box > p {
@@ -226,7 +257,16 @@
     }
 
     .main-img-wrapper {
-        width: 300px;
+        width: 250px;
+        display: none;
+    }
+
+    .brand-explain {
+        gap: 60px;
+    }
+
+    h3 {
+        font-size: 24px;
     }
 
     .brand-explain-content {
@@ -235,6 +275,34 @@
 
     .brand-explain-content figure {
         width: 350px;
+    }
+
+    #showroom::before {
+        content: '';
+        width: 400px;
+        aspect-ratio: 1;
+        position: absolute;
+        top: 3%;
+        left: -3%;
+        z-index: -1;
+        background-image: url(../img/showroom\ 나뭇잎.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: rotate(80deg);
+    }
+
+    #showroom::after {
+        content: '';
+        width: 200px;
+        aspect-ratio: 1;
+        position: absolute;
+        bottom: 19%;
+        right: -1;
+        z-index: -1;
+        background-image: url(../img/showroom\ 나뭇잎.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        transform: rotate(200deg);
     }
 
     .explain-showroom {
@@ -269,3 +337,6 @@
   /* 캐러셀 이미지 더 넣기, 더보기 넣기 호버넣기 사이즈 정리
   about us  이미지 더 찾기
    */
+
+
+   /* about us부분 작아질 때 글씨내려가는거 */
