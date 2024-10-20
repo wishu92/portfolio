@@ -69,7 +69,7 @@
     }
 
     h5 {
-        font-size: 12px;
+        font-size: 16px;
     }
     
     .best-seller-furniture-name p {
@@ -145,7 +145,12 @@
         top: calc(34% + -1px);
         margin-right: 50px;
     }
-    
+
+    #with-furniture {
+        background-size: cover;
+        background-position: 100% 20%;
+    }
+
     .with-furniture-icons img {
         width: 35px;
     }
@@ -159,16 +164,15 @@
         font-size: 14px;
     }
 
+    .footer-container {
+        height: 180px;
+        justify-content: space-between;
+    }
+
     
 
 }    
     
-
-
-
-
-
-
 
 
 
@@ -216,14 +220,9 @@
         width: 24px;
         aspect-ratio: 1;
         padding: 30px;
-        /* 화면 밖으로 나가는이유? */
     }
 
     section {
-        padding: 0 16px;
-    }
-
-    header {
         padding: 0 16px;
     }
 
@@ -328,6 +327,43 @@
     .showroom-garage-inform {
         height: 300px;
     }
+
+
+    /* 여기부터!!! */
+
+
+    .mobile-header-menubar {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+        background-color: var(--accent-color);
+        position: absolute;
+        top: 80px;
+
+    }
+    
+    .mobile-header-menubar a {
+        display: block;
+        height: 40px;
+        width: 100%;
+        color: var(--text-color);
+        line-height: 20px;
+    }
+    
+    .mobile-header-menubar a:hover {
+        color: #8a8989;
+    }
+    
+    .mobile-header.active {
+        background-color: var(--accent-color);
+    }
+    .mobile-header-menubar.active {
+        display: flex;
+    }
+
     
   }
 
@@ -338,5 +374,5 @@
   about us  이미지 더 찾기
    */
 
-
    /* about us부분 작아질 때 글씨내려가는거 */
+   /* with furniture부분 2개씩 */

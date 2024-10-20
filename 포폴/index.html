@@ -54,43 +54,49 @@
                 </ul>
             </nav>
         </div>
-        <div class="mobile-header">
-            <a href="#">
-                <img src="../img/퍼니처랩로고.png" alt="furniturelab-logo">
-            </a>
-            <div class="mobile-header-icon">
+        <div>
+            <div class="mobile-header">
                 <a href="#">
-                    <img src="../img/iconoir_menu.png" alt="hamburger">
+                    <img src="../img/퍼니처랩로고.png" alt="furniturelab-logo">
                 </a>
-                <!-- <ul>
-                    <li>
-                        <a href="#">
-                            ABOUT US
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            OUR BEST SELLER
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            SHOW ROOM
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            WITH FURNITURE LAB
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            LOGIN
-                        </a>
-                    </li>
-                </ul> -->
+                <div class="mobile-header-icon">
+                    <a class="mobile-header-toggleBtn" href="#">
+                        <img src="../img/iconoir_menu.png" alt="hamburger">
+                    </a>
+                </div>
             </div>
-
+            <ul class="mobile-header-menubar">
+                <li>
+                    <a href="#">
+                        ABOUT US
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        OUR BEST SELLER
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        SHOW ROOM
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        WITH FURNITURE LAB
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        COSTOMER CENTER
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        LOGIN
+                    </a>
+                </li>
+            </ul>
         </div>
 
     </header>
@@ -424,6 +430,18 @@
 
         const mySlider = document.querySelector('.my-slider');
         createSlider(mySlider, 5, 30, 1000000000, true)
+
+
+        // 반응형 헤더
+        const toggleBtn = document.querySelector(`.mobile-header-toggleBtn`);
+        const menuBar = document.querySelector(`.mobile-header-menubar`);
+        const mobileHeader = document.querySelector('.mobile-header');
+        
+        toggleBtn.addEventListener('click', ()=>{
+            menuBar.classList.toggle('active');
+            mobileHeader.classList.toggle('active');
+        });
+        
 
 
     </script>

@@ -2,6 +2,7 @@
     --text-color:#f0f4f5;
     --accent-color:#072e2c;
 }
+
 body {
     font-family: "Gowun Batang", serif;
     font-weight: 700;
@@ -74,10 +75,13 @@ nav li:last-child {
 
 a {
     text-decoration: none;
-    color: black;
 }
 
 .mobile-header {
+    display: none;
+}
+
+.mobile-header-menubar {
     display: none;
 }
 
@@ -96,7 +100,6 @@ a {
     display: flex;
     flex-direction: column;
     gap: 150px;
-
 }
 
 .main-box {
@@ -109,7 +112,6 @@ a {
 
     padding: 60px;
     box-sizing: border-box;
-    
 }
 
 h1 {
@@ -145,12 +147,8 @@ h1 {
     object-fit: contain;
 }
 
-
 .about {
     background-color: #f2f4ef;
-}
-
-.about {
     padding: 50px 32px; 
 }
 
@@ -642,4 +640,7 @@ button > a {
     font-size: 12px;
 }
 
+.footer-customer-center {
+    display: none;
+}
 
