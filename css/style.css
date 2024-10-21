@@ -252,9 +252,8 @@ h3 {
     color:#222;
 }
 
-
 .best-item-container {
-    max-width: 1200px;
+    width: 1200px;
     height: 100vh;
     margin: 0 auto;
 
@@ -264,11 +263,57 @@ h3 {
     justify-content: space-evenly;
 }
 
+.best-seller {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+}
+
 .section-title {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+.best-seller-pack li {
+    flex: 1 1 0;
+    /* 
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    flex-basis 값을 0 으로 설정하여 기본 넓이를 없게하면 동일한 크기 자식요소를 만들 수 있다. */
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.best-seller button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+/* 비포 에프터로 하면 좋겠다고 하셨음. */
+
+.best-seller-furniture-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.best-seller-furniture {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.best-seller-furniture:hover {
+    box-shadow: 3px 3px 5px #d0cfcf;
+    transition: 0.3s;
+}  
 
 h5 {
     font-size: 16px;
@@ -280,6 +325,7 @@ h5 {
     font-size: 12px;
     color: #222;
 }
+
 
 #showroom {
     padding: 100px 32px;
@@ -321,12 +367,6 @@ h5 {
     align-items: center;
 
     gap: 100px;
-}
-
-.section-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .explain-showroom {
