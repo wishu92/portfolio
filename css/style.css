@@ -432,31 +432,33 @@ h4 {
 
 .more-view button {
     background-color:var(--text-color);
-    border-width: 0.5px;
+    background-color: white;
+    color: #333;
+
     font-size: 14px;
     font-family: "Gowun Batang", serif;
     font-weight: 700;
     font-style: normal;
+    
     border-radius: 3px;
-    border-color: var(--text-color);
-    background-color: white;
+    border-color: white;
+    border-width: 0.5px;
 }
 
 .more-view button:hover {
-    background-color: var(--text-color);
+    border-color:#979696;
+    border-width: 0.5px;
     transition: 0.3s;
 
 }
 
 button > a {
-    color: #333;
     width: 160px;
     height: 40px;
     display: block;
     line-height: 40px;
 
- }
-
+}
 
 #with-furniture {
     background-color: #edf1e9;

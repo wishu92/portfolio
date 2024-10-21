@@ -333,36 +333,53 @@
 
 
     .mobile-header-menubar {
-        display: none;
+        display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        width: 100%;
+        height: 100vh;
+        width: 200px;
+        left: -300px;
         
         background-color: var(--accent-color);
         position: absolute;
-        top: 80px;
+        transition: 0.5s;
+
+        padding: 80px 50px;
+        box-sizing: content-box;
 
     }
     
     .mobile-header-menubar a {
         display: block;
-        height: 40px;
-        width: 100%;
+        height: 50px;
+        width: 200px;
         color: var(--text-color);
-        line-height: 20px;
+
+        font-size: 16px;
+        
     }
     
     .mobile-header-menubar a:hover {
         color: #8a8989;
     }
     
-    .mobile-header.active {
-        background-color: var(--accent-color);
+    /* .mobile-header.active {
+        background-color : #222;
+        opacity : 0.5;
     }
+
+    .main-container.active {
+        background-color : #222;
+        opacity : 0.5;
+    } */
+
     .mobile-header-menubar.active {
-        display: flex;
+        transition: 0.5s;
+        left: 0;
+
     }
+
+
 
     
   }

@@ -113,7 +113,7 @@ function createSlider(target, viewCount, gap, transitionTime, autoPlay){
     // contentWidth가 계속 변화하는 값이 되어야 하기 때문에 let으로 변수선언하기.
 
     
-    contentsWrapper.style.gap = `${gap}px`
+    // contentsWrapper.style.gap = `${gap}px`
     
     window.addEventListener('resize',calcSlideWidth)
     // 브라우저가 resize될 때마다 계산하기. 따라서 함수로 만든거

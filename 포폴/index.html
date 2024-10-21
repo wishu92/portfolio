@@ -151,69 +151,84 @@
     </section>
 
     <section>
-        <div class="best-item-container">
-            <div class="section-title fadein fade to-bottom">
-                <h2>OUR BEST SELLER</h2>
-                <P class="sub-title">FURNITURE LAB</P>
-            </div>
-            <ul class="my-slider best-seller-pack fadein fade to-bottom">
-                <li class="contents">
-                    <figure class="best-seller-furniture">
-                        <img src="../img/가구1.png" alt="net_high_shelf" />
-                    </figure>
-                    <div class="best-seller-furniture-name">
-                        <h5>NET HIGH SHELF</h5>
-                        <p>$370,000</p>
-                    </div>
-                </li>
-                <li class="contents">
-                    <figure class="best-seller-furniture">
-                        <img src="../img/가구2.png" alt="toast_wide_drawer" />
-                    </figure>
-                    <div class="best-seller-furniture-name">
-                        <h5>TOAST WIDE DRAWER</h5>
-                        <p>$450,000</p>
-                    </div>
-                </li>
-                <li class="contents">
-                    <figure class="best-seller-furniture">
-                        <img src="../img/가구3.png" alt="double_wood_shelf" />
-                    </figure>
-                    <div class="best-seller-furniture-name">
-                        <h5>SIMPLE DOUBLE SHELF</h5>
-                        <p>$280,000</p>
-                    </div>
-                </li>
-                <li class="contents">
-                    <figure class="best-seller-furniture">
-                        <img src="../img/가구4.png" alt="brunch_wood_chair" />
-                    </figure>
-                    <div class="best-seller-furniture-name">
-                        <h5>BRUNCH WOOD CHAIR</h5>
-                        <p>$190,000</p>
-                    </div>
-                </li>
-                <li class="contents">
-                    <figure class="best-seller-furniture">
-                        <img src="../img/가구1.png" alt="net_high_shelf" />
-                    </figure>
-                    <div class="best-seller-furniture-name">
-                        <h5>NET HIGH SHELF</h5>
-                        <p>$370,000</p>
-                    </div>
-                </li>
-                <li class="contents">
-                    <figure class="best-seller-furniture">
-                        <img src="../img/가구2.png" alt="toast_wide_drawer" />
-                    </figure>
-                    <div class="best-seller-furniture-name">
-                        <h5>TOAST WIDE DRAWER</h5>
-                        <p>$450,000</p>
-                    </div>
-                </li>
-            </ul>
-            </div>
+        <div class="section-title fadein fade to-bottom">
+            <h2>OUR BEST SELLER</h2>
+            <P class="sub-title">FURNITURE LAB</P>
         </div>
+        <ul class="my-slider best-seller-pack fadein fade to-bottom">
+            <li class="contents">
+                <figure class="best-seller-furniture">
+                    <img src="../img/가구1.png" alt="net_high_shelf" />
+                </figure>
+                <div class="best-seller-furniture-name">
+                    <h5>NET HIGH SHELF</h5>
+                    <p>$370,000</p>
+                </div>
+            </li>
+            <li class="contents">
+                <figure class="best-seller-furniture">
+                    <img src="../img/가구2.png" alt="toast_wide_drawer" />
+                </figure>
+                <div class="best-seller-furniture-name">
+                    <h5>TOAST WIDE DRAWER</h5>
+                    <p>$450,000</p>
+                </div>
+            </li>
+            <li class="contents">
+                <figure class="best-seller-furniture">
+                    <img src="../img/가구3.png" alt="double_wood_shelf" />
+                </figure>
+                <div class="best-seller-furniture-name">
+                    <h5>SIMPLE DOUBLE SHELF</h5>
+                    <p>$280,000</p>
+                </div>
+            </li>
+            <li class="contents">
+                <figure class="best-seller-furniture">
+                    <img src="../img/가구4.png" alt="brunch_wood_chair" />
+                </figure>
+                <div class="best-seller-furniture-name">
+                    <h5>BRUNCH WOOD CHAIR</h5>
+                    <p>$190,000</p>
+                </div>
+            </li>
+            <li class="contents">
+                <figure class="best-seller-furniture">
+                    <img src="../img/가구1.png" alt="net_high_shelf" />
+                </figure>
+                <div class="best-seller-furniture-name">
+                    <h5>NET HIGH SHELF</h5>
+                    <p>$370,000</p>
+                </div>
+            </li>
+            <li class="contents">
+                <figure class="best-seller-furniture">
+                    <img src="../img/가구2.png" alt="toast_wide_drawer" />
+                </figure>
+                <div class="best-seller-furniture-name">
+                    <h5>TOAST WIDE DRAWER</h5>
+                    <p>$450,000</p>
+                </div>
+            </li>
+            <li class="contents">
+                <figure class="best-seller-furniture">
+                    <img src="../img/가구3.png" alt="double_wood_shelf" />
+                </figure>
+                <div class="best-seller-furniture-name">
+                    <h5>SIMPLE DOUBLE SHELF</h5>
+                    <p>$280,000</p>
+                </div>
+            </li>
+            <li class="contents">
+                <figure class="best-seller-furniture">
+                    <img src="../img/가구4.png" alt="brunch_wood_chair" />
+                </figure>
+                <div class="best-seller-furniture-name">
+                    <h5>BRUNCH WOOD CHAIR</h5>
+                    <p>$190,000</p>
+                </div>
+            </li>
+        </ul>
     </section>
 
     <section id="showroom">
@@ -436,10 +451,12 @@
         const toggleBtn = document.querySelector(`.mobile-header-toggleBtn`);
         const menuBar = document.querySelector(`.mobile-header-menubar`);
         const mobileHeader = document.querySelector('.mobile-header');
+        const mainContainer = document.querySelector('.main-container');
         
         toggleBtn.addEventListener('click', ()=>{
             menuBar.classList.toggle('active');
             mobileHeader.classList.toggle('active');
+            mainContainer.classList.toggle('active');
         });
         
 
