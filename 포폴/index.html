@@ -66,7 +66,7 @@
                 </div>
             </div>
             <div class="mobile-header-menubar">
-                <figure class="close">
+                <figure class="mobile-header-close">
                 </figure>
                 <ul>
                     <li>
@@ -105,7 +105,7 @@
 
     </header>
 
-
+<div class="fixed">
     <section class="main">
         <div class="main-container">
             <div class="main-container-explain">
@@ -396,7 +396,7 @@
             </ul>
         </div>
     </footer>
-
+</div>
     <script>
         // 스크롤 페이드인
 
@@ -446,99 +446,34 @@
         // 반응형 헤더
         const toggleBtn = document.querySelector('.mobile-header-toggleBtn');
         const menuBar = document.querySelector('.mobile-header-menubar');
-        const mobileHeader = document.querySelector('.mobile-header');
-        const mainContainer = document.querySelector('.main-container');
-        const closeBtn = document.querySelector('.close');
+        const closeBtn = document.querySelector('.mobile-header-close');
+        const fixed = document.querySelector('.fixed');
 
-        toggleBtn.addEventListener('click', () => {
+        toggleBtn.addEventListener('click', mobileHeaderOpen);
+        closeBtn.addEventListener('click', mobileHeaderClose)
+
+        function mobileHeaderOpen() {
             if (menuBar.style.display == "none") {
                 menuBar.style.display = "block";
+                // menuBar.classList.add('active')
+                // fixed.style.position = "fixed"
+                // fixed.style.top = "{0}px"
             } else {
                 menuBar.style.display = "none";
             }
-        });
+        }
 
-
-        
-
-
-        // hamBtn.addEventListener("click", hamBtnClick);
-        // Mclose.addEventListener("click", closeBtnClick);
-
-
-        // function hamBtnClick() {
-        //     if (mClick.style.display == "none") {
-        //         mClick.style.display = "block";
-        //         mHeader.style.display = "none";
-        //         allContainer.style.display = "none";
-        //     } else {
-        //         mClick.style.display = "none";
-        //     }
-        // }
-
-        // function closeBtnClick() {
-        //     if (mClick.style.display == "block") {
-        //         mClick.style.display = "none";
-        //         mHeader.style.display = "flex";
-        //         allContainer.style.display = "block";
-        //     } else {
-        //         mClick.style.display = "none";
-        //     }
-        // }
+        function mobileHeaderClose() {
+            if (menuBar.style.display == "block"){
+                menuBar.style.display = "none";
+            }else {
+                menuBar.style.display = "block";
+            }
+        }
 
 
 
-
-
-        // const mClick = document.querySelector(".m-ham-click");
-        // const hamBtn = document.querySelector(".ham-img");
-        // const mHeader = document.querySelector(".all-header");
-        // const Mclose = document.querySelector(".close");
-        // const allContainer = document.querySelector(".all-container");
-        // // 쇼핑 및 구매방법 / 보내기 및 받기 등 ul
-
-        // console.log(twoSubAccordionUl);
-        // console.log(arrBtn);
-
-        // for (let i = 0; i < arrBtn.length; i++) {
-        //     arrBtn[i].addEventListener("click", () => {
-        //         for (let j = 0; j < twoSubAccordionUl.length; j++) {
-        //             if (twoSubAccordionUl[j].style.display == "none") {
-        //                 twoSubAccordionUl[j].style.display = "block";
-        //             } else {
-        //                 twoSubAccordionUl[j].style.display = "none";
-        //             }
-        //         }
-        //     });
-        // }
-
-
-        // hamBtn.addEventListener("click", hamBtnClick);
-        // Mclose.addEventListener("click", closeBtnClick);
-
-
-        // function hamBtnClick() {
-        //     if (mClick.style.display == "none") {
-        //         mClick.style.display = "block";
-        //         mHeader.style.display = "none";
-        //         allContainer.style.display = "none";
-        //     } else {
-        //         mClick.style.display = "none";
-        //     }
-        // }
-
-        // function closeBtnClick() {
-        //     if (mClick.style.display == "block") {
-        //         mClick.style.display = "none";
-        //         mHeader.style.display = "flex";
-        //         allContainer.style.display = "block";
-        //     } else {
-        //         mClick.style.display = "none";
-        //     }
-        // }
-
-
-
+       
     </script>
 
 </body>

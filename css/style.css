@@ -16,7 +16,6 @@ img {
 
 body > section {
     padding: 0 32px;
-
 }
 
 .main {
@@ -617,11 +616,6 @@ button > a {
 .footer-customer-center p:nth-child(2n){
     font-size: 16px;
 }
-
-/* .footer-customer-center p:last-child {
-    font-size: 12px;
-    line-height: 18px;
-} */
 
 .search {
     display: flex;

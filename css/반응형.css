@@ -194,24 +194,25 @@
     }
 
     .mobile-header {
+        width: 100%;
+        height: 80px;
+        padding: 0 16px;
+        box-sizing: border-box;
+
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 100%;
+
         position: absolute;
         top: 0;
         left: 0;
-    }
-
-    .mobile-header {
-        width: 100%;
-        height: 80px;
+       
         border-bottom: 0.1px solid rgb(255,255,255,0.5);
     }
 
+
     .mobile-header > a {
         width: 120px;
-        padding: 30px;
     }
 
     .mobile-header-icon {
@@ -223,7 +224,7 @@
         display: block;
         width: 24px;
         aspect-ratio: 1;
-        padding: 30px;
+        padding: 5px;
     }
 
     section {
@@ -346,41 +347,50 @@
         width: 100%;
         background-color: var(--accent-color);
         position: absolute;
-        /* transition: 0.5s; */
         box-sizing: content-box;
+
+        /* left: -100px;
+        transition: 0.5s; */
         display: none;
+    }
+
+    .mobile-header-menubar li {
+        width: 200px;
+        height: 50px;
     }
     
     .mobile-header-menubar a {
         display: block;
-        height: 50px;
+        width: 100%;
+        height: 100%;
         color: var(--text-color);
-
         font-size: 16px;
-        
     }
     
     .mobile-header-menubar a:hover {
         color: #8a8989;
     }
 
-    .close {
+    .mobile-header-close {
         width: 24px;
         height: 24px;
-        background: url(../img/close.png);
+        background: url(../img/close-btn-white.png);
+
+        position: absolute;
+        left: 300px;
+        /* right로 바꾸기 */
+
     }
 
-    .mobile-header-menubar.active {
-        /* transition: 0.5s; */
-        display: block;
-    }    
-    
-    /* .mobile-header-menubar.off {
-        transition: 0.5s;
-        display: none;
-    }     */
-    
+    .mobile-header-close:hover {
+        cursor: pointer;
+    }
 
+    /* .mobile-header-menubar.active {
+        transition: 0.5s;
+        right: 0;
+    }    
+     */
     .footer-customer-center {
         display: none;
     }
