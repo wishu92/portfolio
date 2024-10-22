@@ -152,17 +152,7 @@ h1 {
     padding: 50px 32px; 
 }
 
-.best-item-container {
-    max-width: 1200px;
-    height: 100vh;
 
-    margin: 0 auto;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    
-}
 
 .section-title {
     display: flex;
@@ -252,8 +242,8 @@ h3 {
     color:#222;
 }
 
-.best-item-container {
-    width: 1200px;
+#our-best-seller {
+    max-width: 1200px;
     height: 100vh;
     margin: 0 auto;
 
@@ -263,59 +253,18 @@ h3 {
     justify-content: space-evenly;
 }
 
-.our-best-seller {
-    height: 100vh;
-    width: 1200px;
-
-}
-.my-slider {
+    /* flex: 1 1 0;
     
-}
-.contents {
-    width: 230px;
-    height: 200px;
-}
-
-.best-seller {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-
-}
-
-.section-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.best-seller-pack li {
-    flex: 1 1 0;
-    /* 
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 0;
     flex-basis 값을 0 으로 설정하여 기본 넓이를 없게하면 동일한 크기 자식요소를 만들 수 있다. */
-
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.my-slider {
-    width: 1200px;
-}
-
-.contents {
-    
-}
 
 .best-seller button {
     background-color: white;
     border: none;
     cursor: pointer;
 }
-/* 비포 에프터로 하면 좋겠다고 하셨음. */
 
 .best-seller-furniture-name {
     display: flex;

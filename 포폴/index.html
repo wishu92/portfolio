@@ -7,11 +7,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="../css/스크롤페이드인.css">
     <link rel="stylesheet" href="../css/캐러셀.css">
     <link rel="stylesheet" href="../css/반응형.css">
@@ -65,38 +65,42 @@
                     </a>
                 </div>
             </div>
-            <ul class="mobile-header-menubar">
-                <li>
-                    <a href="#">
-                        ABOUT US
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        OUR BEST SELLER
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        SHOW ROOM
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        WITH FURNITURE LAB
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        COSTOMER CENTER
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        LOGIN
-                    </a>
-                </li>
-            </ul>
+            <div class="mobile-header-menubar">
+                <figure class="close">
+                </figure>
+                <ul>
+                    <li>
+                        <a href="#">
+                            ABOUT US
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            OUR BEST SELLER
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            SHOW ROOM
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            WITH FURNITURE LAB
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            COSTOMER CENTER
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            LOGIN
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
     </header>
@@ -150,7 +154,7 @@
         </div>
     </section>
 
-    <section class="our-best-seller">
+    <section id="our-best-seller">
         <div class="section-title fadein fade to-bottom">
             <h2>OUR BEST SELLER</h2>
             <P class="sub-title">FURNITURE LAB</P>
@@ -207,7 +211,7 @@
                 </figure>
                 <div class="best-seller-furniture-name">
                     <h5>SIMPLE TABLE</h5>
-                    <p>$200,000</p>
+                    <p>$190,000</p>
                 </div>
             </li>
             <li class="contents">
@@ -216,7 +220,7 @@
                 </figure>
                 <div class="best-seller-furniture-name">
                     <h5>VANITY STOOL</h5>
-                    <p>$80,000</p>
+                    <p>$120,000</p>
                 </div>
             </li>
         </ul>
@@ -331,9 +335,9 @@
     <footer id="footer">
         <div class="footer-container">
             <div class="footer-main">
-                    <a class="footer-logo" href="#">
-                        <img src="../img/퍼니처랩로고.png" alt="furniturelab-logo">
-                    </a>
+                <a class="footer-logo" href="#">
+                    <img src="../img/퍼니처랩로고.png" alt="furniturelab-logo">
+                </a>
                 <div class="footer-id-container">
                     <p class="footer-id-inform">
                         &#40;주&#41;테라티디
@@ -440,21 +444,100 @@
 
 
         // 반응형 헤더
-        const toggleBtn = document.querySelector(`.mobile-header-toggleBtn`);
-        const menuBar = document.querySelector(`.mobile-header-menubar`);
+        const toggleBtn = document.querySelector('.mobile-header-toggleBtn');
+        const menuBar = document.querySelector('.mobile-header-menubar');
         const mobileHeader = document.querySelector('.mobile-header');
         const mainContainer = document.querySelector('.main-container');
-        
-        toggleBtn.addEventListener('click', ()=>{
-            menuBar.classList.toggle('active');
-            mobileHeader.classList.toggle('active');
-            mainContainer.classList.toggle('active');
+        const closeBtn = document.querySelector('.close');
+
+        toggleBtn.addEventListener('click', () => {
+            if (menuBar.style.display == "none") {
+                menuBar.classList.toggle('active');
+            } else {
+                menuBar.style.display = "none";
+            }
         });
-        
+
+
+        // hamBtn.addEventListener("click", hamBtnClick);
+        // Mclose.addEventListener("click", closeBtnClick);
+
+
+        // function hamBtnClick() {
+        //     if (mClick.style.display == "none") {
+        //         mClick.style.display = "block";
+        //         mHeader.style.display = "none";
+        //         allContainer.style.display = "none";
+            // } else {
+            //     mClick.style.display = "none";
+            // }
+        // }
+
+        // function closeBtnClick() {
+        //     if (mClick.style.display == "block") {
+        //         mClick.style.display = "none";
+        //         mHeader.style.display = "flex";
+        //         allContainer.style.display = "block";
+        //     } else {
+        //         mClick.style.display = "none";
+        //     }
+        // }
+
+
+
+
+
+        // const mClick = document.querySelector(".m-ham-click");
+        // const hamBtn = document.querySelector(".ham-img");
+        // const mHeader = document.querySelector(".all-header");
+        // const Mclose = document.querySelector(".close");
+        // const allContainer = document.querySelector(".all-container");
+        // // 쇼핑 및 구매방법 / 보내기 및 받기 등 ul
+
+        // console.log(twoSubAccordionUl);
+        // console.log(arrBtn);
+
+        // for (let i = 0; i < arrBtn.length; i++) {
+        //     arrBtn[i].addEventListener("click", () => {
+        //         for (let j = 0; j < twoSubAccordionUl.length; j++) {
+        //             if (twoSubAccordionUl[j].style.display == "none") {
+        //                 twoSubAccordionUl[j].style.display = "block";
+        //             } else {
+        //                 twoSubAccordionUl[j].style.display = "none";
+        //             }
+        //         }
+        //     });
+        // }
+
+
+        // hamBtn.addEventListener("click", hamBtnClick);
+        // Mclose.addEventListener("click", closeBtnClick);
+
+
+        // function hamBtnClick() {
+        //     if (mClick.style.display == "none") {
+        //         mClick.style.display = "block";
+        //         mHeader.style.display = "none";
+        //         allContainer.style.display = "none";
+        //     } else {
+        //         mClick.style.display = "none";
+        //     }
+        // }
+
+        // function closeBtnClick() {
+        //     if (mClick.style.display == "block") {
+        //         mClick.style.display = "none";
+        //         mHeader.style.display = "flex";
+        //         allContainer.style.display = "block";
+        //     } else {
+        //         mClick.style.display = "none";
+        //     }
+        // }
+
 
 
     </script>
-    
+
 </body>
 
 </html>

@@ -52,8 +52,8 @@ function createSlider(target, viewCount, gap, transitionTime, autoPlay){
     prevButton.classList.add('sbs-prev');
     nextButton.classList.add('sbs-next');
 
-    prevButton.innerText = '이전';
-    nextButton.innerText = '다음';
+    prevButton.innerText = '';
+    nextButton.innerText = '';
     const buttons = document.createElement('div');
     buttons.classList.add('sbs-buttons');
 
