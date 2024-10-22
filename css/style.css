@@ -263,6 +263,19 @@ h3 {
     justify-content: space-evenly;
 }
 
+.our-best-seller {
+    height: 100vh;
+    width: 1200px;
+
+}
+.my-slider {
+    
+}
+.contents {
+    width: 230px;
+    height: 200px;
+}
+
 .best-seller {
     display: flex;
     align-items: center;
@@ -287,6 +300,14 @@ h3 {
     display: flex;
     flex-direction: column;
     gap: 30px;
+}
+
+.my-slider {
+    width: 1200px;
+}
+
+.contents {
+    
 }
 
 .best-seller button {
@@ -682,7 +703,4 @@ button > a {
     font-size: 12px;
 }
 
-.footer-customer-center {
-    display: none;
-}
 

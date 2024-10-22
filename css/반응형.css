@@ -72,9 +72,9 @@
         font-size: 16px;
     }
     
-    .best-seller-furniture-name p {
+    /* .best-seller-furniture-name p {
         font-size: 12px;
-    }
+    } */
 
     h2 {
         font-size: 34px;
@@ -368,7 +368,7 @@
         opacity : 0.5;
     }
 
-    .main-container.active {
+    .main.active {
         background-color : #222;
         opacity : 0.5;
     } */
@@ -376,9 +376,14 @@
     .mobile-header-menubar.active {
         transition: 0.5s;
         left: 0;
+        position: fixed;
+        top: 0;
 
+    }    
+    
+    .footer-customer-center {
+        display: none;
     }
-
 
 
     
@@ -387,7 +392,7 @@
 
 
 
-  /* 캐러셀 이미지 더 넣기, 더보기 넣기 호버넣기 사이즈 정리
+  /*더보기 넣기 호버넣기 사이즈 정리
   about us  이미지 더 찾기
    */
 
