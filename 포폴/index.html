@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/style.css">
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
-
+    
     <link rel="stylesheet" href="../css/스크롤페이드인.css">
     <link rel="stylesheet" href="../css/캐러셀.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/반응형.css">
     <script src="../JS/캐러셀.js"></script>
 </head>
@@ -165,7 +165,7 @@
                     <img src="../img/가구1.png" alt="net_high_shelf" />
                 </figure>
                 <div class="best-seller-furniture-name">
-                    <h5>NET HIGH SHELF</h5>
+                    <h6>NET HIGH SHELF</h6>
                     <p>$370,000</p>
                 </div>
             </li>
@@ -174,7 +174,7 @@
                     <img src="../img/가구2.png" alt="toast_wide_drawer" />
                 </figure>
                 <div class="best-seller-furniture-name">
-                    <h5>TOAST WIDE DRAWER</h5>
+                    <h6>TOAST WIDE DRAWER</h6>
                     <p>$450,000</p>
                 </div>
             </li>
@@ -183,7 +183,7 @@
                     <img src="../img/가구3.png" alt="double_wood_shelf" />
                 </figure>
                 <div class="best-seller-furniture-name">
-                    <h5>SIMPLE DOUBLE SHELF</h5>
+                    <h6>SIMPLE DOUBLE SHELF</h6>
                     <p>$280,000</p>
                 </div>
             </li>
@@ -192,7 +192,7 @@
                     <img src="../img/가구4.png" alt="brunch_wood_chair" />
                 </figure>
                 <div class="best-seller-furniture-name">
-                    <h5>BRUNCH WOOD CHAIR</h5>
+                    <h6>BRUNCH WOOD CHAIR</h6>
                     <p>$190,000</p>
                 </div>
             </li>
@@ -201,7 +201,7 @@
                     <img src="../img/가구5.png" alt="book_high_shelf" />
                 </figure>
                 <div class="best-seller-furniture-name">
-                    <h5>BOOK HIGH SHELF</h5>
+                    <h6>BOOK HIGH SHELF</h6>
                     <p>$860,000</p>
                 </div>
             </li>
@@ -210,7 +210,7 @@
                     <img src="../img/가구6.png" alt="simple_table" />
                 </figure>
                 <div class="best-seller-furniture-name">
-                    <h5>SIMPLE TABLE</h5>
+                    <h6>SIMPLE TABLE</h6>
                     <p>$190,000</p>
                 </div>
             </li>
@@ -219,7 +219,7 @@
                     <img src="../img/가구7.png" alt="vanity_stool" />
                 </figure>
                 <div class="best-seller-furniture-name">
-                    <h5>VANITY STOOL</h5>
+                    <h6>VANITY STOOL</h6>
                     <p>$120,000</p>
                 </div>
             </li>
@@ -452,11 +452,14 @@
 
         toggleBtn.addEventListener('click', () => {
             if (menuBar.style.display == "none") {
-                menuBar.classList.toggle('active');
+                menuBar.style.display = "block";
             } else {
                 menuBar.style.display = "none";
             }
         });
+
+
+        
 
 
         // hamBtn.addEventListener("click", hamBtnClick);
@@ -468,9 +471,9 @@
         //         mClick.style.display = "block";
         //         mHeader.style.display = "none";
         //         allContainer.style.display = "none";
-            // } else {
-            //     mClick.style.display = "none";
-            // }
+        //     } else {
+        //         mClick.style.display = "none";
+        //     }
         // }
 
         // function closeBtnClick() {
