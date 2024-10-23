@@ -2,19 +2,23 @@
     position: relative;
     width: fit-content;
     margin-bottom: 28px;
+    width: 100%;
+
+    /* 전체를 감싸고 있는 박스 width100%으로 반응형 작동되게 */
 }
 
 .sbs-slider {
-    max-width: 1200px;
+    width: 1000px;
     height: 100%;
     overflow: hidden;
-    /* 화면에 보이고 싶은 만큼 width 조정 */
+    /* 화면에 보이고 싶은 부분만 나오게 width 조정 */
+    
 }
 
 .sbs-content-wrapper {
     display: flex;
     transition: 0.5s;
-    /* height: 100%; */
+    height: 100%;
 }
 
 .sbs-content {
@@ -62,14 +66,14 @@
 }
 
 .sbs-prev {
-    left: -24px;
+    left: 0;
     top: 50%;
     background: url(../img/화살표.png) no-repeat;
     background-size: contain;
 }
 
 .sbs-next {
-    right: -24px;
+    right: 0;
     top: 50%;
     background: url(../img/화살표right.png) no-repeat;
     background-size: contain;

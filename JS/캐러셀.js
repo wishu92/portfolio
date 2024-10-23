@@ -130,7 +130,7 @@ function createSlider(target, viewCount, gap, transitionTime, autoPlay){
         contentWidth = (slider.clientWidth - gap * (viewCount - 1)) / viewCount;
     
         for(let i = 0 ; i < contentsWrapper.childElementCount ; i ++) {
-            contentsWrapper.children[i].style.width = `${contentWidth}px`
+            contentsWrapper.children[i].style.width = `${230}px`
         }
         applyIndexToSlider(false);
     }
