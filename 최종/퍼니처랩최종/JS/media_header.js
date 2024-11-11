@@ -8,6 +8,8 @@ const fixed = document.querySelector(".fixed");
 toggleBtn.addEventListener("click", mobileHeaderOpen);
 closeBtn.addEventListener("click", mobileHeaderClose);
 const mainBlock = document.querySelector(".web-main");
+mobileHeaderOpen()
+
 
 function mobileHeaderOpen() {
     if (menuBar.style.display == "none") {
